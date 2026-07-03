@@ -5,6 +5,9 @@
  * Every chart is rebuilt (destroy + recreate) whenever DASH.renderAll() runs,
  * which keeps this module simple and guarantees charts always reflect the
  * current filtered record set with a smooth animated transition.
+ *
+ * Uses the chartjs-plugin-datalabels plugin (loaded in index.html) so every
+ * bar / slice shows its value directly on the chart, not just on hover.
  * ---------------------------------------------------------------------------
  */
 
@@ -12,6 +15,11 @@ window.DASH = window.DASH || {};
 
 (function (DASH) {
   "use strict";
+
+  // Register the data-labels plugin globally once, if it loaded successfully.
+  if (typeof Chart !== "undefined" && typeof ChartDataLabels !== "undefined") {
+    Chart.register(ChartDataLabels);
+  }
 
   const PALETTE = {
     primary: "#2563eb",
@@ -37,6 +45,7 @@ window.DASH = window.DASH || {};
       responsive: true,
       maintainAspectRatio: false,
       animation: { duration: 650, easing: "easeOutQuart" },
+      layout: { padding: { top: 22 } },
       plugins: {
         legend: { display: true, position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } },
         tooltip: {
@@ -45,9 +54,36 @@ window.DASH = window.DASH || {};
           titleFont: { size: 12, weight: "bold" },
           bodyFont: { size: 12 },
           cornerRadius: 6
-        }
+        },
+        datalabels: { display: false } // opt-in per chart below
       }
     }, overrides || {});
+  }
+
+  // Shared datalabel style for vertical bar charts (label above each bar).
+  function percentLabelsVertical(color) {
+    return {
+      display: true,
+      anchor: "end",
+      align: "top",
+      offset: 2,
+      color: color || "#1f2937",
+      font: { weight: "700", size: 11 },
+      formatter: (value) => value + "%"
+    };
+  }
+
+  // Shared datalabel style for horizontal bar charts (label to the right of each bar).
+  function percentLabelsHorizontal(color) {
+    return {
+      display: true,
+      anchor: "end",
+      align: "right",
+      offset: 4,
+      color: color || "#1f2937",
+      font: { weight: "700", size: 11 },
+      formatter: (value) => value + "%"
+    };
   }
 
   function makeChart(id, config) {
@@ -90,9 +126,16 @@ window.DASH = window.DASH || {};
       },
       options: baseOptions({
         cutout: "72%",
+        layout: { padding: 8 },
         plugins: {
           legend: { position: "bottom" },
-          tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw} stores` } }
+          tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw} stores` } },
+          datalabels: {
+            display: (ctx) => ctx.dataset.data[ctx.dataIndex] > 0,
+            color: (ctx) => (ctx.dataIndex === 0 ? "#ffffff" : "#1f2937"),
+            font: { weight: "700", size: 13 },
+            formatter: (value) => value
+          }
         }
       })
     });
@@ -116,7 +159,11 @@ window.DASH = window.DASH || {};
         }]
       },
       options: baseOptions({
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.raw + "% complete" } } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.raw + "% complete" } },
+          datalabels: percentLabelsVertical(PALETTE.primary)
+        },
         scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
@@ -140,7 +187,11 @@ window.DASH = window.DASH || {};
         }]
       },
       options: baseOptions({
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.raw + "% complete" } } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.raw + "% complete" } },
+          datalabels: percentLabelsVertical(PALETTE.success)
+        },
         scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
@@ -164,7 +215,11 @@ window.DASH = window.DASH || {};
         }]
       },
       options: baseOptions({
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } },
+          datalabels: percentLabelsVertical(PALETTE.warning)
+        },
         scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
@@ -188,7 +243,11 @@ window.DASH = window.DASH || {};
         }]
       },
       options: baseOptions({
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } },
+          datalabels: percentLabelsVertical("#7c3aed")
+        },
         scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
@@ -211,7 +270,18 @@ window.DASH = window.DASH || {};
           borderColor: "#fff"
         }]
       },
-      options: baseOptions({ plugins: { legend: { position: "bottom" } } })
+      options: baseOptions({
+        layout: { padding: 8 },
+        plugins: {
+          legend: { position: "bottom" },
+          datalabels: {
+            display: true,
+            color: "#ffffff",
+            font: { weight: "700", size: 12 },
+            formatter: (value) => value
+          }
+        }
+      })
     });
   }
 
@@ -245,7 +315,12 @@ window.DASH = window.DASH || {};
       },
       options: baseOptions({
         indexAxis: "y",
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } } },
+        layout: { padding: { top: 8, right: 34 } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } },
+          datalabels: percentLabelsHorizontal(PALETTE.success)
+        },
         scales: { x: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
@@ -267,7 +342,12 @@ window.DASH = window.DASH || {};
       },
       options: baseOptions({
         indexAxis: "y",
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } } },
+        layout: { padding: { top: 8, right: 34 } },
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } },
+          datalabels: percentLabelsHorizontal(PALETTE.danger)
+        },
         scales: { x: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
