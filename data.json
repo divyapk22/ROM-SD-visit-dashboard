@@ -1,0 +1,1176 @@
+{
+  "lastUpdated": "2026-07-02T18:18:27.162Z",
+  "totalStoresConfigured": 60,
+  "records": [
+    {
+      "visitId": 92,
+      "visitDate": "2026-04-01",
+      "visitType": "Informed Visit",
+      "siteCode": "TZKZ",
+      "siteName": "Guwahati Airport Departure",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 84
+    },
+    {
+      "visitId": 2,
+      "visitDate": "2026-04-02",
+      "visitType": "Informed Visit",
+      "siteCode": "THE2",
+      "siteName": "Alpha One Ahmedabad",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 83
+    },
+    {
+      "visitId": 93,
+      "visitDate": "2026-04-02",
+      "visitType": "Informed Visit",
+      "siteCode": "TUW4",
+      "siteName": "Gokulam",
+      "checklist": "ROM",
+      "visitedBy": "Sarath",
+      "visitScore": 85
+    },
+    {
+      "visitId": 3,
+      "visitDate": "2026-04-03",
+      "visitType": "Informed Visit",
+      "siteCode": "THE9",
+      "siteName": "Viviana Thane",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 84
+    },
+    {
+      "visitId": 94,
+      "visitDate": "2026-04-03",
+      "visitType": "Informed Visit",
+      "siteCode": "TY7V",
+      "siteName": "Hilite",
+      "checklist": "ROM",
+      "visitedBy": "Sarath",
+      "visitScore": 86
+    },
+    {
+      "visitId": 4,
+      "visitDate": "2026-04-04",
+      "visitType": "Surprise Visit",
+      "siteCode": "THF0",
+      "siteName": "PMC Chennai",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 85
+    },
+    {
+      "visitId": 95,
+      "visitDate": "2026-04-04",
+      "visitType": "Surprise Visit",
+      "siteCode": "T42A",
+      "siteName": "Lulu Trivandrum",
+      "checklist": "ROM",
+      "visitedBy": "Sarath",
+      "visitScore": 87
+    },
+    {
+      "visitId": 6,
+      "visitDate": "2026-04-06",
+      "visitType": "Surprise Visit",
+      "siteCode": "THF4",
+      "siteName": "Quest Kolkatta",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 87
+    },
+    {
+      "visitId": 97,
+      "visitDate": "2026-04-06",
+      "visitType": "Surprise Visit",
+      "siteCode": "T42C",
+      "siteName": "Goa Airport",
+      "checklist": "ROM",
+      "visitedBy": "Nasir Shaikh",
+      "visitScore": 89
+    },
+    {
+      "visitId": 7,
+      "visitDate": "2026-04-07",
+      "visitType": "Surprise Visit",
+      "siteCode": "THF6",
+      "siteName": "Mumbai T2D Airport",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 88
+    },
+    {
+      "visitId": 98,
+      "visitDate": "2026-04-07",
+      "visitType": "Surprise Visit",
+      "siteCode": "TLY7",
+      "siteName": "JWD Play",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 85
+    },
+    {
+      "visitId": 1,
+      "visitDate": "2026-04-08",
+      "visitType": "Informed Visit",
+      "siteCode": "THD8",
+      "siteName": "Express Avenue Chennai",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 82
+    },
+    {
+      "visitId": 9,
+      "visitDate": "2026-04-09",
+      "visitType": "Informed Visit",
+      "siteCode": "THG2",
+      "siteName": "Treasure Island Indore",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 100,
+      "visitDate": "2026-04-09",
+      "visitType": "Informed Visit",
+      "siteCode": "T77X",
+      "siteName": "Palladium Ahmedabad",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 87
+    },
+    {
+      "visitId": 10,
+      "visitDate": "2026-04-10",
+      "visitType": "Informed Visit",
+      "siteCode": "THG5",
+      "siteName": "Vadodara",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 86
+    },
+    {
+      "visitId": 101,
+      "visitDate": "2026-04-10",
+      "visitType": "Informed Visit",
+      "siteCode": "T26L",
+      "siteName": "Kopa Pune",
+      "checklist": "ROM",
+      "visitedBy": "Subodh",
+      "visitScore": 88
+    },
+    {
+      "visitId": 11,
+      "visitDate": "2026-04-11",
+      "visitType": "Surprise Visit",
+      "siteCode": "THG7",
+      "siteName": "Forum Chennai",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 87
+    },
+    {
+      "visitId": 102,
+      "visitDate": "2026-04-11",
+      "visitType": "Surprise Visit",
+      "siteCode": "T5PF",
+      "siteName": "Ahmd T1A",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 89
+    },
+    {
+      "visitId": 12,
+      "visitDate": "2026-04-12",
+      "visitType": "Surprise Visit",
+      "siteCode": "THH8",
+      "siteName": "L&T Seawoods",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 88
+    },
+    {
+      "visitId": 103,
+      "visitDate": "2026-04-12",
+      "visitType": "Surprise Visit",
+      "siteCode": "T2WF",
+      "siteName": "Forum Kochi",
+      "checklist": "ROM",
+      "visitedBy": "Sarath",
+      "visitScore": 82
+    },
+    {
+      "visitId": 13,
+      "visitDate": "2026-04-13",
+      "visitType": "Surprise Visit",
+      "siteCode": "THI5",
+      "siteName": "Vega Siliguri",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 104,
+      "visitDate": "2026-04-13",
+      "visitType": "Surprise Visit",
+      "siteCode": "T6AA",
+      "siteName": "PROZONE",
+      "checklist": "ROM",
+      "visitedBy": "Subodh",
+      "visitScore": 83
+    },
+    {
+      "visitId": 14,
+      "visitDate": "2026-04-14",
+      "visitType": "Surprise Visit",
+      "siteCode": "THI8",
+      "siteName": "Mumbai Airport T1 Arrival",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 82
+    },
+    {
+      "visitId": 105,
+      "visitDate": "2026-04-14",
+      "visitType": "Surprise Visit",
+      "siteCode": "T2UO",
+      "siteName": "Wakad PUNE MOM",
+      "checklist": "ROM",
+      "visitedBy": "Subodh",
+      "visitScore": 84
+    },
+    {
+      "visitId": 15,
+      "visitDate": "2026-04-15",
+      "visitType": "Informed Visit",
+      "siteCode": "THI2",
+      "siteName": "ICC Pune",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 83
+    },
+    {
+      "visitId": 106,
+      "visitDate": "2026-04-15",
+      "visitType": "Informed Visit",
+      "siteCode": "T7UJ",
+      "siteName": "Chennai T1A",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 16,
+      "visitDate": "2026-04-16",
+      "visitType": "Informed Visit",
+      "siteCode": "THI9",
+      "siteName": "Xperia Mall, Dombivali",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 84
+    },
+    {
+      "visitId": 107,
+      "visitDate": "2026-04-16",
+      "visitType": "Informed Visit",
+      "siteCode": "T3AA",
+      "siteName": "Rajkot",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 86
+    },
+    {
+      "visitId": 17,
+      "visitDate": "2026-04-17",
+      "visitType": "Informed Visit",
+      "siteCode": "THI3",
+      "siteName": "Prozone Coimbatore",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 85
+    },
+    {
+      "visitId": 108,
+      "visitDate": "2026-04-17",
+      "visitType": "Informed Visit",
+      "siteCode": "TB2N",
+      "siteName": "Palladium, Mumbai (Relocation)",
+      "checklist": "ROM",
+      "visitedBy": "Almas",
+      "visitScore": 87
+    },
+    {
+      "visitId": 18,
+      "visitDate": "2026-04-18",
+      "visitType": "Surprise Visit",
+      "siteCode": "THJ2",
+      "siteName": "Oberoi Mall Mumbai",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 86
+    },
+    {
+      "visitId": 109,
+      "visitDate": "2026-04-18",
+      "visitType": "Surprise Visit",
+      "siteCode": "THG9",
+      "siteName": "DB City Bhopal",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 88
+    },
+    {
+      "visitId": 19,
+      "visitDate": "2026-04-19",
+      "visitType": "Surprise Visit",
+      "siteCode": "THK1",
+      "siteName": "VR Surat",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 87
+    },
+    {
+      "visitId": 110,
+      "visitDate": "2026-04-19",
+      "visitType": "Surprise Visit",
+      "siteCode": "THE4",
+      "siteName": "PMC Pune",
+      "checklist": "ROM",
+      "visitedBy": "Subodh",
+      "visitScore": 89
+    },
+    {
+      "visitId": 20,
+      "visitDate": "2026-04-20",
+      "visitType": "Surprise Visit",
+      "siteCode": "THP1",
+      "siteName": "VR Chennai",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 88
+    },
+    {
+      "visitId": 111,
+      "visitDate": "2026-04-20",
+      "visitType": "Surprise Visit",
+      "siteCode": "T7ZN",
+      "siteName": "R City Ghatkopar",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 85
+    },
+    {
+      "visitId": 21,
+      "visitDate": "2026-04-21",
+      "visitType": "Surprise Visit",
+      "siteCode": "THQ3",
+      "siteName": "Forum Esplanadone Bhubn",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 112,
+      "visitDate": "2026-04-21",
+      "visitType": "Surprise Visit",
+      "siteCode": "TB2O",
+      "siteName": "Rise-2, Palladium",
+      "checklist": "ROM",
+      "visitedBy": "Almas",
+      "visitScore": 86
+    },
+    {
+      "visitId": 22,
+      "visitDate": "2026-04-22",
+      "visitType": "Informed Visit",
+      "siteCode": "THP2",
+      "siteName": "Indore C21",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 113,
+      "visitDate": "2026-04-22",
+      "visitType": "Informed Visit",
+      "siteCode": "T8LI",
+      "siteName": "PMCK Kurla",
+      "checklist": "ROM",
+      "visitedBy": "Almas",
+      "visitScore": 87
+    },
+    {
+      "visitId": 23,
+      "visitDate": "2026-04-23",
+      "visitType": "Informed Visit",
+      "siteCode": "THQ0",
+      "siteName": "Ambuja Raipur",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 86
+    },
+    {
+      "visitId": 114,
+      "visitDate": "2026-04-23",
+      "visitType": "Informed Visit",
+      "siteCode": "TL6C",
+      "siteName": "Rowan Marina Mall- T4IS",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 92
+    },
+    {
+      "visitId": 24,
+      "visitDate": "2026-04-24",
+      "visitType": "Informed Visit",
+      "siteCode": "THJ4",
+      "siteName": "Mumbai T2A",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 87
+    },
+    {
+      "visitId": 115,
+      "visitDate": "2026-04-24",
+      "visitType": "Informed Visit",
+      "siteCode": "TL6N",
+      "siteName": "Rowan Jamnagar",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 89
+    },
+    {
+      "visitId": 25,
+      "visitDate": "2026-04-25",
+      "visitType": "Surprise Visit",
+      "siteCode": "THS6",
+      "siteName": "Golden Icon",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 88
+    },
+    {
+      "visitId": 116,
+      "visitDate": "2026-04-25",
+      "visitType": "Surprise Visit",
+      "siteCode": "TF5Y",
+      "siteName": "Oberoi Borivali",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 82
+    },
+    {
+      "visitId": 26,
+      "visitDate": "2026-04-26",
+      "visitType": "Surprise Visit",
+      "siteCode": "THM8",
+      "siteName": "Mall De Goa",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 89
+    },
+    {
+      "visitId": 117,
+      "visitDate": "2026-04-26",
+      "visitType": "Surprise Visit",
+      "siteCode": "TBIM",
+      "siteName": "Zora Mall",
+      "checklist": "Unspecified",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 83
+    },
+    {
+      "visitId": 27,
+      "visitDate": "2026-04-27",
+      "visitType": "Surprise Visit",
+      "siteCode": "THS7",
+      "siteName": "City Centre Mall AS",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 82
+    },
+    {
+      "visitId": 28,
+      "visitDate": "2026-04-28",
+      "visitType": "Surprise Visit",
+      "siteCode": "THN2",
+      "siteName": "NUCLEUSMALL-JH",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 83
+    },
+    {
+      "visitId": 29,
+      "visitDate": "2026-04-29",
+      "visitType": "Informed Visit",
+      "siteCode": "THN6",
+      "siteName": "Utkal Galleria Bhubaneshwar",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 84
+    },
+    {
+      "visitId": 30,
+      "visitDate": "2026-04-30",
+      "visitType": "Informed Visit",
+      "siteCode": "THD9",
+      "siteName": "Infiniti Malad",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 85
+    },
+    {
+      "visitId": 31,
+      "visitDate": "2026-05-01",
+      "visitType": "Informed Visit",
+      "siteCode": "THR3",
+      "siteName": "South City Mall",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 86
+    },
+    {
+      "visitId": 32,
+      "visitDate": "2026-05-02",
+      "visitType": "Surprise Visit",
+      "siteCode": "TY4T",
+      "siteName": "JWD",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 87
+    },
+    {
+      "visitId": 33,
+      "visitDate": "2026-05-03",
+      "visitType": "Surprise Visit",
+      "siteCode": "TMA0",
+      "siteName": "H N Hospital",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 88
+    },
+    {
+      "visitId": 34,
+      "visitDate": "2026-05-04",
+      "visitType": "Surprise Visit",
+      "siteCode": "TZKY",
+      "siteName": "Guwahati Airport Arrival",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 35,
+      "visitDate": "2026-05-05",
+      "visitType": "Surprise Visit",
+      "siteCode": "TZKZ",
+      "siteName": "Guwahati Airport Departure",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 36,
+      "visitDate": "2026-05-06",
+      "visitType": "Informed Visit",
+      "siteCode": "TUW4",
+      "siteName": "Gokulam",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 86
+    },
+    {
+      "visitId": 37,
+      "visitDate": "2026-05-07",
+      "visitType": "Informed Visit",
+      "siteCode": "TY7V",
+      "siteName": "Hilite",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 87
+    },
+    {
+      "visitId": 38,
+      "visitDate": "2026-05-08",
+      "visitType": "Informed Visit",
+      "siteCode": "T42A",
+      "siteName": "Lulu Trivandrum",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 92
+    },
+    {
+      "visitId": 39,
+      "visitDate": "2026-05-09",
+      "visitType": "Surprise Visit",
+      "siteCode": "T34O",
+      "siteName": "Citadel",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 40,
+      "visitDate": "2026-05-10",
+      "visitType": "Surprise Visit",
+      "siteCode": "T42C",
+      "siteName": "Goa Airport",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 82
+    },
+    {
+      "visitId": 41,
+      "visitDate": "2026-05-11",
+      "visitType": "Surprise Visit",
+      "siteCode": "TLY7",
+      "siteName": "JWD Play",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 83
+    },
+    {
+      "visitId": 42,
+      "visitDate": "2026-05-12",
+      "visitType": "Surprise Visit",
+      "siteCode": "T61F",
+      "siteName": "PMC CHENNAI Play",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 84
+    },
+    {
+      "visitId": 43,
+      "visitDate": "2026-05-13",
+      "visitType": "Informed Visit",
+      "siteCode": "T77X",
+      "siteName": "Palladium Ahmedabad",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 85
+    },
+    {
+      "visitId": 44,
+      "visitDate": "2026-05-14",
+      "visitType": "Informed Visit",
+      "siteCode": "T26L",
+      "siteName": "Kopa Pune",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 86
+    },
+    {
+      "visitId": 45,
+      "visitDate": "2026-05-15",
+      "visitType": "Informed Visit",
+      "siteCode": "T5PF",
+      "siteName": "Ahmd T1A",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 87
+    },
+    {
+      "visitId": 46,
+      "visitDate": "2026-05-16",
+      "visitType": "Surprise Visit",
+      "siteCode": "T2WF",
+      "siteName": "Forum Kochi",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 88
+    },
+    {
+      "visitId": 47,
+      "visitDate": "2026-05-17",
+      "visitType": "Surprise Visit",
+      "siteCode": "T6AA",
+      "siteName": "PROZONE",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 48,
+      "visitDate": "2026-05-18",
+      "visitType": "Surprise Visit",
+      "siteCode": "T2UO",
+      "siteName": "Wakad PUNE MOM",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 49,
+      "visitDate": "2026-05-19",
+      "visitType": "Surprise Visit",
+      "siteCode": "T7UJ",
+      "siteName": "Chennai T1A",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 86
+    },
+    {
+      "visitId": 50,
+      "visitDate": "2026-05-20",
+      "visitType": "Informed Visit",
+      "siteCode": "T3AA",
+      "siteName": "Rajkot",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 87
+    },
+    {
+      "visitId": 51,
+      "visitDate": "2026-05-21",
+      "visitType": "Informed Visit",
+      "siteCode": "TB2N",
+      "siteName": "Palladium, Mumbai (Relocation)",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 88
+    },
+    {
+      "visitId": 52,
+      "visitDate": "2026-05-22",
+      "visitType": "Informed Visit",
+      "siteCode": "THG9",
+      "siteName": "DB City Bhopal",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 89
+    },
+    {
+      "visitId": 53,
+      "visitDate": "2026-05-23",
+      "visitType": "Surprise Visit",
+      "siteCode": "THE4",
+      "siteName": "PMC Pune",
+      "checklist": "ROM",
+      "visitedBy": "Chetan",
+      "visitScore": 82
+    },
+    {
+      "visitId": 54,
+      "visitDate": "2026-05-24",
+      "visitType": "Surprise Visit",
+      "siteCode": "T7ZN",
+      "siteName": "R City Ghatkopar",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 83
+    },
+    {
+      "visitId": 55,
+      "visitDate": "2026-05-25",
+      "visitType": "Surprise Visit",
+      "siteCode": "TB2O",
+      "siteName": "Rise-2, Palladium",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 84
+    },
+    {
+      "visitId": 56,
+      "visitDate": "2026-05-26",
+      "visitType": "Surprise Visit",
+      "siteCode": "T8LI",
+      "siteName": "PMCK Kurla",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 85
+    },
+    {
+      "visitId": 57,
+      "visitDate": "2026-05-27",
+      "visitType": "Informed Visit",
+      "siteCode": "TL6C",
+      "siteName": "Rowan Marina Mall- T4IS",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 86
+    },
+    {
+      "visitId": 58,
+      "visitDate": "2026-05-28",
+      "visitType": "Informed Visit",
+      "siteCode": "TL6N",
+      "siteName": "Rowan Jamnagar",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 87
+    },
+    {
+      "visitId": 59,
+      "visitDate": "2026-05-29",
+      "visitType": "Informed Visit",
+      "siteCode": "TF5Y",
+      "siteName": "Oberoi Borivali",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 88
+    },
+    {
+      "visitId": 60,
+      "visitDate": "2026-05-30",
+      "visitType": "Surprise Visit",
+      "siteCode": "TBIM",
+      "siteName": "Zora Mall",
+      "checklist": "ROM",
+      "visitedBy": "Shirish Mastud",
+      "visitScore": 90
+    },
+    {
+      "visitId": 61,
+      "visitDate": "2026-05-31",
+      "visitType": "Surprise Visit",
+      "siteCode": "THE2",
+      "siteName": "Alpha One Ahmedabad",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 85
+    },
+    {
+      "visitId": 62,
+      "visitDate": "2026-06-01",
+      "visitType": "Surprise Visit",
+      "siteCode": "THE9",
+      "siteName": "Viviana Thane",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 86
+    },
+    {
+      "visitId": 63,
+      "visitDate": "2026-06-02",
+      "visitType": "Surprise Visit",
+      "siteCode": "THF0",
+      "siteName": "PMC Chennai",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 87
+    },
+    {
+      "visitId": 64,
+      "visitDate": "2026-06-03",
+      "visitType": "Informed Visit",
+      "siteCode": "THF1",
+      "siteName": "Brookfields Coimbatore",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 88
+    },
+    {
+      "visitId": 65,
+      "visitDate": "2026-06-04",
+      "visitType": "Informed Visit",
+      "siteCode": "THF4",
+      "siteName": "Quest Kolkatta",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 66,
+      "visitDate": "2026-06-05",
+      "visitType": "Informed Visit",
+      "siteCode": "THF6",
+      "siteName": "Mumbai T2D Airport",
+      "checklist": "ROM",
+      "visitedBy": "Nasir Shaikh",
+      "visitScore": 82
+    },
+    {
+      "visitId": 67,
+      "visitDate": "2026-06-06",
+      "visitType": "Surprise Visit",
+      "siteCode": "THG2",
+      "siteName": "Treasure Island Indore",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 83
+    },
+    {
+      "visitId": 68,
+      "visitDate": "2026-06-07",
+      "visitType": "Surprise Visit",
+      "siteCode": "THG5",
+      "siteName": "Vadodara",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 84
+    },
+    {
+      "visitId": 69,
+      "visitDate": "2026-06-08",
+      "visitType": "Surprise Visit",
+      "siteCode": "THG7",
+      "siteName": "Forum Chennai",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 70,
+      "visitDate": "2026-06-09",
+      "visitType": "Informed Visit",
+      "siteCode": "THH8",
+      "siteName": "L&T Seawoods",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 86
+    },
+    {
+      "visitId": 71,
+      "visitDate": "2026-06-10",
+      "visitType": "Informed Visit",
+      "siteCode": "THI5",
+      "siteName": "Vega Siliguri",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 87
+    },
+    {
+      "visitId": 72,
+      "visitDate": "2026-06-11",
+      "visitType": "Informed Visit",
+      "siteCode": "THI8",
+      "siteName": "Mumbai Airport T1 Arrival",
+      "checklist": "ROM",
+      "visitedBy": "Nasir Shaikh",
+      "visitScore": 88
+    },
+    {
+      "visitId": 73,
+      "visitDate": "2026-06-12",
+      "visitType": "Surprise Visit",
+      "siteCode": "THI2",
+      "siteName": "ICC Pune",
+      "checklist": "ROM",
+      "visitedBy": "Subodh",
+      "visitScore": 89
+    },
+    {
+      "visitId": 74,
+      "visitDate": "2026-06-13",
+      "visitType": "Surprise Visit",
+      "siteCode": "THI9",
+      "siteName": "Xperia Mall, Dombivali",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 85
+    },
+    {
+      "visitId": 75,
+      "visitDate": "2026-06-14",
+      "visitType": "Surprise Visit",
+      "siteCode": "THI3",
+      "siteName": "Prozone Coimbatore",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 86
+    },
+    {
+      "visitId": 76,
+      "visitDate": "2026-06-15",
+      "visitType": "Surprise Visit",
+      "siteCode": "THJ2",
+      "siteName": "Oberoi Mall Mumbai",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 87
+    },
+    {
+      "visitId": 77,
+      "visitDate": "2026-06-16",
+      "visitType": "Surprise Visit",
+      "siteCode": "THK1",
+      "siteName": "VR Surat",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 88
+    },
+    {
+      "visitId": 78,
+      "visitDate": "2026-06-17",
+      "visitType": "Informed Visit",
+      "siteCode": "THQ3",
+      "siteName": "Forum Esplanadone Bhubn",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 79,
+      "visitDate": "2026-06-18",
+      "visitType": "Informed Visit",
+      "siteCode": "THP2",
+      "siteName": "Indore C21",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 84
+    },
+    {
+      "visitId": 5,
+      "visitDate": "2026-06-19",
+      "visitType": "Surprise Visit",
+      "siteCode": "THF1",
+      "siteName": "Brookfields Coimbatore",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 86
+    },
+    {
+      "visitId": 80,
+      "visitDate": "2026-06-19",
+      "visitType": "Informed Visit",
+      "siteCode": "THQ0",
+      "siteName": "Ambuja Raipur",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 85
+    },
+    {
+      "visitId": 96,
+      "visitDate": "2026-06-19",
+      "visitType": "Surprise Visit",
+      "siteCode": "T34O",
+      "siteName": "Citadel",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 88
+    },
+    {
+      "visitId": 81,
+      "visitDate": "2026-06-20",
+      "visitType": "Surprise Visit",
+      "siteCode": "THJ4",
+      "siteName": "Mumbai T2A",
+      "checklist": "ROM",
+      "visitedBy": "Nasir Shaikh",
+      "visitScore": 86
+    },
+    {
+      "visitId": 82,
+      "visitDate": "2026-06-21",
+      "visitType": "Surprise Visit",
+      "siteCode": "THS6",
+      "siteName": "Golden Icon",
+      "checklist": "ROM",
+      "visitedBy": "Virendra Rahevar",
+      "visitScore": 87
+    },
+    {
+      "visitId": 83,
+      "visitDate": "2026-06-22",
+      "visitType": "Surprise Visit",
+      "siteCode": "THM8",
+      "siteName": "Mall De Goa",
+      "checklist": "ROM",
+      "visitedBy": "Nasir Shaikh",
+      "visitScore": 88
+    },
+    {
+      "visitId": 84,
+      "visitDate": "2026-06-23",
+      "visitType": "Surprise Visit",
+      "siteCode": "THS7",
+      "siteName": "City Centre Mall AS",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 89
+    },
+    {
+      "visitId": 85,
+      "visitDate": "2026-06-24",
+      "visitType": "Informed Visit",
+      "siteCode": "THN2",
+      "siteName": "NUCLEUSMALL-JH",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 85
+    },
+    {
+      "visitId": 8,
+      "visitDate": "2026-06-25",
+      "visitType": "Informed Visit",
+      "siteCode": "THG0",
+      "siteName": "Lulu Mall",
+      "checklist": "ROM",
+      "visitedBy": "Divya Lakshmi",
+      "visitScore": 89
+    },
+    {
+      "visitId": 86,
+      "visitDate": "2026-06-25",
+      "visitType": "Informed Visit",
+      "siteCode": "THN6",
+      "siteName": "Utkal Galleria Bhubaneshwar",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 86
+    },
+    {
+      "visitId": 99,
+      "visitDate": "2026-06-25",
+      "visitType": "Informed Visit",
+      "siteCode": "T61F",
+      "siteName": "PMC CHENNAI Play",
+      "checklist": "ROM",
+      "visitedBy": "Damodharan",
+      "visitScore": 86
+    },
+    {
+      "visitId": 87,
+      "visitDate": "2026-06-26",
+      "visitType": "Informed Visit",
+      "siteCode": "THD9",
+      "siteName": "Infiniti Malad",
+      "checklist": "ROM",
+      "visitedBy": "Almas",
+      "visitScore": 87
+    },
+    {
+      "visitId": 88,
+      "visitDate": "2026-06-27",
+      "visitType": "Surprise Visit",
+      "siteCode": "THR3",
+      "siteName": "South City Mall",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 88
+    },
+    {
+      "visitId": 89,
+      "visitDate": "2026-06-28",
+      "visitType": "Surprise Visit",
+      "siteCode": "TY4T",
+      "siteName": "JWD",
+      "checklist": "ROM",
+      "visitedBy": "Sudhir",
+      "visitScore": 89
+    },
+    {
+      "visitId": 90,
+      "visitDate": "2026-06-29",
+      "visitType": "Surprise Visit",
+      "siteCode": "TMA0",
+      "siteName": "H N Hospital",
+      "checklist": "ROM",
+      "visitedBy": "Almas",
+      "visitScore": 82
+    },
+    {
+      "visitId": 91,
+      "visitDate": "2026-06-30",
+      "visitType": "Surprise Visit",
+      "siteCode": "TZKY",
+      "siteName": "Guwahati Airport Arrival",
+      "checklist": "ROM",
+      "visitedBy": "Manmohan",
+      "visitScore": 83
+    }
+  ]
+}

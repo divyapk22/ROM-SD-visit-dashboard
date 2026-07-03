@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin - Generate data.json | Retail Audit Dashboard</title>
+
+<!-- SheetJS: reads the daily Store Visit Audit Excel report -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="style.css?v=20260703c" />
+</head>
+<body>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <header class="app-header">
+    <div class="brand">
+      <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'" />
+      <div class="brand-text">
+        <h1>Admin: Generate data.json</h1>
+        <span>Upload the daily Store Visit Audit Excel report</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <a class="btn" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        Back to Dashboard
+      </a>
+    </div>
+  </header>
+
+  <div class="admin-shell">
+
+    <div class="admin-hero">
+      <h1>Daily Excel &rarr; data.json Generator</h1>
+      <p>No coding required. Upload today's Store Visit Audit Excel file, review the preview, then download data.json and replace the file in your GitHub repository.</p>
+    </div>
+
+    <!-- Step 1: Upload -->
+    <div class="upload-zone" id="upload-zone" onclick="document.getElementById('file-input').click()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg>
+      <h3>Click to upload, or drag &amp; drop your .xlsx file here</h3>
+      <p>Expected columns: Store Visit Date, Type of Visit, Site Code, Site Name, Checklist, Visit Done By, Visit Score</p>
+      <input type="file" id="file-input" accept=".xlsx,.xls" />
+    </div>
+
+    <!-- Step 2: Validation summary (hidden until a file is processed) -->
+    <div class="step-card" id="validation-card" style="display:none;">
+      <h3><span class="step-number">2</span> Validation Summary</h3>
+      <div class="summary-grid">
+        <div class="summary-box"><div class="val" id="sum-rows">0</div><div class="lab">Rows Read</div></div>
+        <div class="summary-box"><div class="val" id="sum-valid">0</div><div class="lab">Valid Records</div></div>
+        <div class="summary-box"><div class="val" id="sum-stores">0</div><div class="lab">Unique Stores Visited</div></div>
+        <div class="summary-box"><div class="val" id="sum-unmapped">0</div><div class="lab">Unmapped Site Codes</div></div>
+        <div class="summary-box"><div class="val" id="sum-errors">0</div><div class="lab">Rows Skipped</div></div>
+      </div>
+      <ul class="validation-list" id="validation-list"></ul>
+    </div>
+
+    <!-- Step 3: Preview -->
+    <div class="step-card" id="preview-card" style="display:none;">
+      <h3><span class="step-number">3</span> Preview Records (first 50 shown)</h3>
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Visit Date</th><th>Visit Type</th><th>Site Code</th><th>Site Name</th>
+              <th>Checklist</th><th>Visit Done By</th><th>Visit Score</th><th>ROM</th><th>SD</th>
+            </tr>
+          </thead>
+          <tbody id="preview-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Step 4: Generate + Download -->
+    <div class="step-card" id="generate-card" style="display:none;">
+      <h3><span class="step-number">4</span> Generate &amp; Download data.json</h3>
+      <p class="panel-sub">Download the file below, then replace <code>data.json</code> in the project root of your GitHub repository and commit the change. The Live Dashboard will automatically show the new data the next time it's opened.</p>
+      <div class="actions-row">
+        <button class="btn btn-primary" id="download-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Download data.json
+        </button>
+        <button class="btn" id="start-over-btn">Start Over</button>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <h3>Master Mapping Reference</h3>
+      <p class="panel-sub">This admin page validates every Site Code against <code>mapping.js</code>. To add, remove or reassign a store, edit the <code>storeMapping</code> array in that file directly - no other file needs to change.</p>
+      <div class="summary-grid">
+        <div class="summary-box"><div class="val" id="map-total-stores">0</div><div class="lab">Stores in Mapping</div></div>
+        <div class="summary-box"><div class="val" id="map-total-roms">0</div><div class="lab">ROMs</div></div>
+        <div class="summary-box"><div class="val" id="map-total-sds">0</div><div class="lab">SDs</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="app-footer">Retail Audit Dashboard &middot; Admin Upload Tool &middot; 100% static, runs entirely in your browser</footer>
+
+  <script src="mapping.js?v=20260703c"></script>
+  <script>
+  /**
+   * Admin upload logic. Runs entirely client-side: SheetJS parses the
+   * Excel file in the browser, no data ever leaves the machine.
+   */
+  (function () {
+    "use strict";
+
+    const REQUIRED_HEADERS = {
+      visitDate: ["store visit date", "visit date"],
+      visitType: ["type of visit", "visit type"],
+      siteCode: ["site code"],
+      siteName: ["site name"],
+      checklist: ["checklist"],
+      visitedBy: ["visit done by", "visited by"],
+      visitScore: ["visit score"]
+    };
+
+    let generatedRecords = [];
+    let generatedJson = null;
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setText("map-total-stores", storeMapping.length);
+      setText("map-total-roms", getAllRoms().length);
+      setText("map-total-sds", getAllSds().length);
+
+      const fileInput = document.getElementById("file-input");
+      const uploadZone = document.getElementById("upload-zone");
+
+      fileInput.addEventListener("change", function (e) {
+        if (e.target.files && e.target.files[0]) handleFile(e.target.files[0]);
+      });
+
+      ["dragover", "dragenter"].forEach(evt =>
+        uploadZone.addEventListener(evt, function (e) { e.preventDefault(); uploadZone.classList.add("dragover"); })
+      );
+      ["dragleave", "drop"].forEach(evt =>
+        uploadZone.addEventListener(evt, function (e) { e.preventDefault(); uploadZone.classList.remove("dragover"); })
+      );
+      uploadZone.addEventListener("drop", function (e) {
+        e.preventDefault();
+        if (e.dataTransfer.files && e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
+      });
+
+      document.getElementById("download-btn").addEventListener("click", downloadDataJson);
+      document.getElementById("start-over-btn").addEventListener("click", resetAdmin);
+    });
+
+    function setText(id, val) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = val;
+    }
+
+    function handleFile(file) {
+      if (!/\.(xlsx|xls)$/i.test(file.name)) {
+        toast("Please upload a .xlsx or .xls file.", "error");
+        return;
+      }
+      const reader = new FileReader();
+      reader.onerror = function () { toast("Could not read the selected file.", "error"); };
+      reader.onload = function (e) {
+        try {
+          const data = new Uint8Array(e.target.result);
+          const workbook = XLSX.read(data, { type: "array", cellDates: true });
+          const firstSheetName = workbook.SheetNames[0];
+          const sheet = workbook.Sheets[firstSheetName];
+          // raw:true (with cellDates:true above) keeps date cells as real JS Date
+          // objects and numeric/percentage cells as plain numbers, instead of
+          // locale-formatted strings like "4/8/26" or "82%" that are ambiguous
+          // to re-parse (is that April 8 or August 4?). We format dates and
+          // scores ourselves below from the unambiguous raw values.
+          const rows = XLSX.utils.sheet_to_json(sheet, { defval: "", raw: true });
+          processRows(rows);
+        } catch (err) {
+          console.error(err);
+          toast("Failed to parse the Excel file: " + err.message, "error");
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    function normalizeHeader(h) {
+      return String(h).trim().toLowerCase();
+    }
+
+    function buildHeaderMap(sampleRow) {
+      const headerMap = {};
+      const actualHeaders = Object.keys(sampleRow || {});
+      Object.keys(REQUIRED_HEADERS).forEach(function (field) {
+        const aliases = REQUIRED_HEADERS[field];
+        const match = actualHeaders.find(function (h) {
+          return aliases.includes(normalizeHeader(h));
+        });
+        if (match) headerMap[field] = match;
+      });
+      return headerMap;
+    }
+
+    function excelSerialToDate(serial) {
+      // Excel's epoch: Dec 30 1899. Convert serial day number to JS Date.
+      const utcDays = Math.floor(serial - 25569);
+      const utcValue = utcDays * 86400;
+      return new Date(utcValue * 1000);
+    }
+
+    function pad2(n) { return n < 10 ? "0" + n : "" + n; }
+
+    function formatDateValue(val) {
+      if (val instanceof Date && !isNaN(val.getTime())) {
+        return val.getFullYear() + "-" + pad2(val.getMonth() + 1) + "-" + pad2(val.getDate());
+      }
+      if (typeof val === "number") {
+        const d = excelSerialToDate(val);
+        if (!isNaN(d.getTime())) return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+      }
+      if (typeof val === "string" && val.trim()) {
+        const trimmed = val.trim();
+        // Try native parse first (handles ISO and many common formats)
+        const native = new Date(trimmed);
+        if (!isNaN(native.getTime()) && /\d{4}/.test(trimmed)) {
+          return native.getFullYear() + "-" + pad2(native.getMonth() + 1) + "-" + pad2(native.getDate());
+        }
+        // Try DD/MM/YYYY or DD-MM-YYYY
+        const m = trimmed.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})$/);
+        if (m) {
+          let [, d, mo, y] = m;
+          if (y.length === 2) y = "20" + y;
+          return y + "-" + pad2(parseInt(mo, 10)) + "-" + pad2(parseInt(d, 10));
+        }
+      }
+      return null;
+    }
+
+    function processRows(rows) {
+      if (!rows.length) {
+        toast("The uploaded file has no data rows.", "error");
+        return;
+      }
+
+      const headerMap = buildHeaderMap(rows[0]);
+      const missing = Object.keys(REQUIRED_HEADERS).filter(f => !headerMap[f]);
+
+      const messages = [];
+      if (missing.length) {
+        messages.push({
+          type: "error",
+          text: "Missing required column(s): " + missing.join(", ") + ". Please check your Excel headers."
+        });
+      }
+
+      let validCount = 0;
+      let skipped = 0;
+      let unmappedCount = 0;
+      const unmappedCodes = new Set();
+      const records = [];
+      let visitId = 1;
+
+      rows.forEach(function (row, idx) {
+        const rawDate = headerMap.visitDate ? row[headerMap.visitDate] : "";
+        const visitDate = formatDateValue(rawDate);
+        const visitType = headerMap.visitType ? String(row[headerMap.visitType] || "").trim() : "";
+        const siteCode = headerMap.siteCode ? String(row[headerMap.siteCode] || "").trim() : "";
+        const siteNameRaw = headerMap.siteName ? String(row[headerMap.siteName] || "").trim() : "";
+        const checklist = headerMap.checklist ? String(row[headerMap.checklist] || "").trim() : "";
+        const visitedBy = headerMap.visitedBy ? String(row[headerMap.visitedBy] || "").trim() : "";
+        const scoreRaw = headerMap.visitScore ? row[headerMap.visitScore] : "";
+        let visitScore = typeof scoreRaw === "string" ? parseFloat(scoreRaw.replace("%", "")) : scoreRaw;
+        // Excel stores percentage-formatted cells as a decimal fraction
+        // (e.g. 82% is stored as 0.82). Detect that and scale up to 0-100.
+        if (typeof visitScore === "number" && !isNaN(visitScore) && visitScore > 0 && visitScore <= 1) {
+          visitScore = visitScore * 100;
+        }
+
+        // Skip completely blank rows
+        const isBlankRow = !visitDate && !siteCode && !siteNameRaw && !visitType;
+        if (isBlankRow) return;
+
+        if (!visitDate || !siteCode || isNaN(visitScore)) {
+          skipped++;
+          return;
+        }
+
+        const mapped = getStoreBySiteCode(siteCode);
+        if (!mapped) {
+          unmappedCount++;
+          unmappedCodes.add(siteCode);
+        }
+
+        records.push({
+          visitId: visitId++,
+          visitDate: visitDate,
+          visitType: visitType || "Unspecified",
+          siteCode: siteCode,
+          siteName: mapped ? mapped.siteName : (siteNameRaw || "Unknown Site"),
+          checklist: checklist || "Unspecified",
+          visitedBy: visitedBy || "Unspecified",
+          visitScore: Math.max(0, Math.min(100, Math.round(visitScore)))
+        });
+        validCount++;
+      });
+
+      if (unmappedCodes.size) {
+        messages.push({
+          type: "warn",
+          text: unmappedCodes.size + " site code(s) not found in mapping.js: " + Array.from(unmappedCodes).slice(0, 10).join(", ") +
+            (unmappedCodes.size > 10 ? "..." : "") + ". These rows were still included using the Site Name from the Excel file, but won't roll up under a ROM/SD until mapping.js is updated."
+        });
+      }
+      if (skipped) {
+        messages.push({
+          type: "warn",
+          text: skipped + " row(s) were skipped due to a missing/invalid Visit Date, Site Code, or Visit Score."
+        });
+      }
+      if (!missing.length && !skipped) {
+        messages.push({ type: "ok", text: "All required columns detected and every row parsed successfully." });
+      }
+
+      const uniqueStores = new Set(records.map(r => r.siteCode)).size;
+
+      generatedRecords = records;
+      generatedJson = {
+        lastUpdated: new Date().toISOString(),
+        totalStoresConfigured: (typeof TOTAL_STORES_TARGET !== "undefined") ? TOTAL_STORES_TARGET : 60,
+        records: records
+      };
+
+      renderValidation(rows.length, validCount, uniqueStores, unmappedCount, skipped, messages);
+      renderPreview(records);
+
+      document.getElementById("validation-card").style.display = "block";
+      document.getElementById("preview-card").style.display = records.length ? "block" : "none";
+      document.getElementById("generate-card").style.display = (records.length && !missing.length) ? "block" : "none";
+
+      if (missing.length) {
+        toast("Upload failed validation. See the summary below.", "error");
+      } else {
+        toast("File processed successfully. Review the preview and download data.json.", "success");
+      }
+    }
+
+    function renderValidation(rowsRead, valid, uniqueStores, unmapped, skipped, messages) {
+      setText("sum-rows", rowsRead);
+      setText("sum-valid", valid);
+      setText("sum-stores", uniqueStores);
+      setText("sum-unmapped", unmapped);
+      setText("sum-errors", skipped);
+
+      const list = document.getElementById("validation-list");
+      list.innerHTML = messages.map(function (m) {
+        const icon = m.type === "error" ? "&#10060;" : (m.type === "warn" ? "&#9888;&#65039;" : "&#9989;");
+        return '<li class="' + m.type + '"><span>' + icon + '</span><span>' + escapeHtml(m.text) + '</span></li>';
+      }).join("");
+    }
+
+    function renderPreview(records) {
+      const tbody = document.getElementById("preview-table-body");
+      const sample = records.slice(0, 50);
+      if (!sample.length) {
+        tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state">No valid records to preview.</div></td></tr>';
+        return;
+      }
+      tbody.innerHTML = sample.map(function (r) {
+        const mapped = getStoreBySiteCode(r.siteCode);
+        const rom = mapped ? mapped.rom : "Unmapped";
+        const sd = mapped ? mapped.sd : "Unmapped";
+        return "<tr>" +
+          "<td>" + escapeHtml(r.visitDate) + "</td>" +
+          "<td>" + escapeHtml(r.visitType) + "</td>" +
+          "<td>" + escapeHtml(r.siteCode) + "</td>" +
+          "<td>" + escapeHtml(r.siteName) + "</td>" +
+          "<td>" + escapeHtml(r.checklist) + "</td>" +
+          "<td>" + escapeHtml(r.visitedBy) + "</td>" +
+          "<td><span class=\"score-pill " + scoreClass(r.visitScore) + "\">" + r.visitScore + "%</span></td>" +
+          "<td>" + escapeHtml(rom) + "</td>" +
+          "<td>" + escapeHtml(sd) + "</td>" +
+          "</tr>";
+      }).join("");
+    }
+
+    function scoreClass(score) {
+      if (score >= 85) return "high";
+      if (score >= 70) return "mid";
+      return "low";
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function downloadDataJson() {
+      if (!generatedJson) {
+        toast("Nothing to download yet - upload a file first.", "error");
+        return;
+      }
+      const blob = new Blob([JSON.stringify(generatedJson, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "data.json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+      toast("data.json downloaded. Replace it in your GitHub repository and commit.", "success");
+    }
+
+    function resetAdmin() {
+      generatedRecords = [];
+      generatedJson = null;
+      document.getElementById("file-input").value = "";
+      document.getElementById("validation-card").style.display = "none";
+      document.getElementById("preview-card").style.display = "none";
+      document.getElementById("generate-card").style.display = "none";
+    }
+
+    function toast(message, type) {
+      const container = document.getElementById("toast-container");
+      const el = document.createElement("div");
+      el.className = "toast " + (type || "");
+      el.textContent = message;
+      container.appendChild(el);
+      setTimeout(function () { el.remove(); }, 5000);
+    }
+  })();
+  </script>
+</body>
+</html>
