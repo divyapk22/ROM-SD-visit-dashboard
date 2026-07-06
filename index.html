@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Retail Audit Dashboard | Live Store Visit Compliance</title>
+<meta name="description" content="Live executive dashboard tracking daily store visit audits, ROM/SD performance and compliance scores." />
+
+<!-- Chart.js (charts) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.min.js"></script>
+<!-- Chart.js Data Labels plugin (shows the value directly on each bar/slice) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+<!-- SheetJS (Export tables to Excel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<!-- html2canvas + jsPDF (Export dashboard to PDF) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<link rel="stylesheet" href="style.css?v=20260706a" />
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <p>Loading latest audit data...</p>
+  </div>
+
+  <!-- Toasts -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Top App Bar -->
+  <header class="app-header">
+    <div class="brand">
+      <img src="logo.png" alt="Logo" class="logo" onerror="this.style.display='none'" />
+      <div class="brand-text">
+        <h1>Retail Audit Dashboard</h1>
+        <span>Store Visit Compliance &amp; Score Tracker</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span class="last-updated"><span class="dot"></span><span id="last-updated-text">Last updated: -</span></span>
+      <button class="btn" onclick="DASH.printDashboard()" title="Print dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
+        Print
+      </button>
+      <button class="btn" onclick="DASH.exportDashboardToPdf()" title="Export dashboard as PDF">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        Export PDF
+      </button>
+      <a class="btn btn-primary" href="admin-generator.html" title="Upload today's Excel report">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg>
+        Admin Upload
+      </a>
+    </div>
+  </header>
+
+  <div class="container" id="dashboard-content">
+
+    <!-- Fatal error banner (shown only if data.json fails to load) -->
+    <div class="banner-error" id="fatal-error-banner" style="display:none;"></div>
+
+    <!-- Sticky Filters -->
+    <div class="filters-bar">
+      <div class="filter-field">
+        <label>Date</label>
+        <input type="date" id="filter-date" />
+      </div>
+      <div class="filter-field">
+        <label>Month</label>
+        <input type="month" id="filter-month" />
+      </div>
+      <div class="filter-field">
+        <label>ROM</label>
+        <select id="filter-rom"><option value="">All</option></select>
+      </div>
+      <div class="filter-field">
+        <label>SD</label>
+        <select id="filter-sd"><option value="">All</option></select>
+      </div>
+      <div class="filter-field">
+        <label>Site Name</label>
+        <select id="filter-site-name"><option value="">All</option></select>
+      </div>
+      <div class="filter-field">
+        <label>Site Code</label>
+        <select id="filter-site-code"><option value="">All</option></select>
+      </div>
+      <div class="filter-field">
+        <label>Type of Visit</label>
+        <select id="filter-visit-type"><option value="">All</option></select>
+      </div>
+      <div class="filter-field">
+        <label>Checklist</label>
+        <select id="filter-checklist"><option value="">All</option></select>
+      </div>
+      <div class="filter-actions">
+        <span class="last-updated" id="active-filter-badge">No filters applied</span>
+        <button class="btn btn-sm" id="filter-reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-top"><span class="kpi-label">Total Stores</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-total-stores">120</div>
+        <div class="kpi-sub">Fixed network size</div>
+      </div>
+      <div class="kpi-card accent-blue">
+        <div class="kpi-top"><span class="kpi-label">Stores Visited</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-stores-visited">0</div>
+        <div class="kpi-sub">Out of 120 stores</div>
+      </div>
+      <div class="kpi-card accent-red">
+        <div class="kpi-top"><span class="kpi-label">Stores Pending</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-stores-pending">0</div>
+        <div class="kpi-sub">Yet to be audited</div>
+      </div>
+      <div class="kpi-card accent-green">
+        <div class="kpi-top"><span class="kpi-label">Completion %</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12A10 10 0 1 1 12 2"/><path d="M22 2 12 12"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-completion">0%</div>
+        <div class="kpi-sub">Visit completion rate</div>
+      </div>
+      <div class="kpi-card accent-amber">
+        <div class="kpi-top"><span class="kpi-label">Avg. Visit Score</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-avg-score">0%</div>
+        <div class="kpi-sub">Across all audits</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-top"><span class="kpi-label">Total Audits</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-total-audits">0</div>
+        <div class="kpi-sub">Visits completed</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-top"><span class="kpi-label">Total ROMs</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-total-roms">0</div>
+        <div class="kpi-sub">Regional managers</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-top"><span class="kpi-label">Total SDs</span>
+          <div class="kpi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        </div>
+        <div class="kpi-value" id="kpi-total-sds">0</div>
+        <div class="kpi-sub">Store development leads</div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="section-title">Performance Overview</div>
+    <div class="charts-grid">
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>Overall Visit Completion</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-overall-completion"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>Visit Type Distribution</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-visit-type"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>ROM-wise Visit Completion</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-rom-completion"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>SD-wise Visit Completion</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-sd-completion"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>Average Visit Score by ROM</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-rom-avg-score"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>Average Visit Score by SD</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-sd-avg-score"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>Top 10 Highest Scoring Stores</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-top-stores"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <div class="panel-header"><h3>Lowest Scoring Stores</h3></div>
+        <div class="chart-canvas-wrap"><canvas id="chart-low-stores"></canvas></div>
+      </div>
+
+    </div>
+
+    <!-- Store Visit Details Table -->
+    <div class="section-title">Store Visit Details <span class="badge-count" id="visits-table-count">0 record(s)</span></div>
+    <div class="panel">
+      <div class="table-toolbar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="visits-search" placeholder="Search by site, ROM, SD, visit type, checklist..." oninput="DASH.onTableSearch(this.value)" />
+        </div>
+        <button class="btn btn-sm" onclick="DASH.exportVisitsToExcel()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Export to Excel
+        </button>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table" id="visits-table">
+          <thead>
+            <tr>
+              <th data-col="visitDate" onclick="DASH.sortVisitsTable('visitDate')">Visit Date <span class="sort-arrow">▲▼</span></th>
+              <th data-col="siteCode" onclick="DASH.sortVisitsTable('siteCode')">Site Code <span class="sort-arrow">▲▼</span></th>
+              <th data-col="siteName" onclick="DASH.sortVisitsTable('siteName')">Site Name <span class="sort-arrow">▲▼</span></th>
+              <th data-col="rom" onclick="DASH.sortVisitsTable('rom')">ROM <span class="sort-arrow">▲▼</span></th>
+              <th data-col="sd" onclick="DASH.sortVisitsTable('sd')">SD <span class="sort-arrow">▲▼</span></th>
+              <th data-col="visitType" onclick="DASH.sortVisitsTable('visitType')">Visit Type <span class="sort-arrow">▲▼</span></th>
+              <th data-col="checklist" onclick="DASH.sortVisitsTable('checklist')">Checklist <span class="sort-arrow">▲▼</span></th>
+              <th data-col="visitScore" onclick="DASH.sortVisitsTable('visitScore')">Visit Score <span class="sort-arrow">▲▼</span></th>
+            </tr>
+          </thead>
+          <tbody id="visits-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ROM Performance Table -->
+    <div class="section-title">ROM Performance</div>
+    <div class="panel">
+      <div class="table-toolbar">
+        <span class="panel-sub">Assigned stores, visits completed and average score per Regional Operations Manager.</span>
+        <button class="btn btn-sm" onclick="DASH.exportRomToExcel()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Export to Excel
+        </button>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table" id="rom-table">
+          <thead>
+            <tr>
+              <th data-col="name" onclick="DASH.sortRomTable('name')">ROM <span class="sort-arrow">▲▼</span></th>
+              <th data-col="assigned" onclick="DASH.sortRomTable('assigned')">Assigned Stores <span class="sort-arrow">▲▼</span></th>
+              <th data-col="visited" onclick="DASH.sortRomTable('visited')">Visited Stores <span class="sort-arrow">▲▼</span></th>
+              <th data-col="pending" onclick="DASH.sortRomTable('pending')">Pending Stores <span class="sort-arrow">▲▼</span></th>
+              <th data-col="completionPct" onclick="DASH.sortRomTable('completionPct')">Completion % <span class="sort-arrow">▲▼</span></th>
+              <th data-col="avgScore" onclick="DASH.sortRomTable('avgScore')">Average Score <span class="sort-arrow">▲▼</span></th>
+            </tr>
+          </thead>
+          <tbody id="rom-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- SD Performance Table -->
+    <div class="section-title">SD Performance</div>
+    <div class="panel">
+      <div class="table-toolbar">
+        <span class="panel-sub">Assigned stores, visits completed and average score per Store Development lead.</span>
+        <button class="btn btn-sm" onclick="DASH.exportSdToExcel()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Export to Excel
+        </button>
+      </div>
+      <div class="table-scroll">
+        <table class="data-table" id="sd-table">
+          <thead>
+            <tr>
+              <th data-col="name" onclick="DASH.sortSdTable('name')">SD <span class="sort-arrow">▲▼</span></th>
+              <th data-col="assigned" onclick="DASH.sortSdTable('assigned')">Assigned Stores <span class="sort-arrow">▲▼</span></th>
+              <th data-col="visited" onclick="DASH.sortSdTable('visited')">Visited Stores <span class="sort-arrow">▲▼</span></th>
+              <th data-col="pending" onclick="DASH.sortSdTable('pending')">Pending Stores <span class="sort-arrow">▲▼</span></th>
+              <th data-col="completionPct" onclick="DASH.sortSdTable('completionPct')">Completion % <span class="sort-arrow">▲▼</span></th>
+              <th data-col="avgScore" onclick="DASH.sortSdTable('avgScore')">Average Score <span class="sort-arrow">▲▼</span></th>
+            </tr>
+          </thead>
+          <tbody id="sd-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="app-footer">
+    Retail Audit Dashboard &middot; Data refreshes automatically from data.json &middot; Built for GitHub Pages
+  </footer>
+
+  <!-- Master mapping must load before app.js/filters.js/charts.js use it -->
+  <script src="mapping.js?v=20260706a"></script>
+  <script src="charts.js?v=20260706a"></script>
+  <script src="filters.js?v=20260706a"></script>
+  <script src="app.js?v=20260706a"></script>
+</body>
+</html>
