@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-07-06T00:00:00.000Z",
+  "lastUpdated": "2026-07-06T07:16:31.069Z",
   "totalStoresConfigured": 120,
   "records": [
     {
       "visitId": 1,
-      "visitDate": "2026-04-08",
+      "visitDate": "2026-04-07",
       "visitType": "Informed Visit",
       "siteCode": "THD8",
       "siteName": "Express Avenue Chennai",
@@ -14,7 +14,7 @@
     },
     {
       "visitId": 2,
-      "visitDate": "2026-04-02",
+      "visitDate": "2026-04-01",
       "visitType": "Informed Visit",
       "siteCode": "THE2",
       "siteName": "Alpha One Ahmedabad",
@@ -24,7 +24,7 @@
     },
     {
       "visitId": 3,
-      "visitDate": "2026-04-03",
+      "visitDate": "2026-04-02",
       "visitType": "Informed Visit",
       "siteCode": "THE9",
       "siteName": "Viviana Thane",
@@ -34,7 +34,7 @@
     },
     {
       "visitId": 4,
-      "visitDate": "2026-04-04",
+      "visitDate": "2026-04-03",
       "visitType": "Surprise Visit",
       "siteCode": "THF0",
       "siteName": "PMC Chennai",
@@ -44,7 +44,7 @@
     },
     {
       "visitId": 5,
-      "visitDate": "2026-06-19",
+      "visitDate": "2026-06-18",
       "visitType": "Surprise Visit",
       "siteCode": "THF1",
       "siteName": "Brookfields Coimbatore",
@@ -54,7 +54,7 @@
     },
     {
       "visitId": 6,
-      "visitDate": "2026-04-06",
+      "visitDate": "2026-04-05",
       "visitType": "Surprise Visit",
       "siteCode": "THF4",
       "siteName": "Quest Kolkatta",
@@ -64,7 +64,7 @@
     },
     {
       "visitId": 7,
-      "visitDate": "2026-04-07",
+      "visitDate": "2026-04-06",
       "visitType": "Surprise Visit",
       "siteCode": "THF6",
       "siteName": "Mumbai T2D Airport",
@@ -74,7 +74,7 @@
     },
     {
       "visitId": 8,
-      "visitDate": "2026-06-25",
+      "visitDate": "2026-06-24",
       "visitType": "Informed Visit",
       "siteCode": "THG0",
       "siteName": "Lulu Mall",
@@ -84,7 +84,7 @@
     },
     {
       "visitId": 9,
-      "visitDate": "2026-04-09",
+      "visitDate": "2026-04-08",
       "visitType": "Informed Visit",
       "siteCode": "THG2",
       "siteName": "Treasure Island Indore",
@@ -94,7 +94,7 @@
     },
     {
       "visitId": 10,
-      "visitDate": "2026-04-10",
+      "visitDate": "2026-04-09",
       "visitType": "Informed Visit",
       "siteCode": "THG5",
       "siteName": "Vadodara",
@@ -104,7 +104,7 @@
     },
     {
       "visitId": 11,
-      "visitDate": "2026-04-11",
+      "visitDate": "2026-04-10",
       "visitType": "Surprise Visit",
       "siteCode": "THG7",
       "siteName": "Forum Chennai",
@@ -114,7 +114,7 @@
     },
     {
       "visitId": 12,
-      "visitDate": "2026-04-12",
+      "visitDate": "2026-04-11",
       "visitType": "Surprise Visit",
       "siteCode": "THH8",
       "siteName": "L&T Seawoods",
@@ -124,7 +124,7 @@
     },
     {
       "visitId": 13,
-      "visitDate": "2026-04-13",
+      "visitDate": "2026-04-12",
       "visitType": "Surprise Visit",
       "siteCode": "THI5",
       "siteName": "Vega Siliguri",
@@ -134,7 +134,7 @@
     },
     {
       "visitId": 14,
-      "visitDate": "2026-04-14",
+      "visitDate": "2026-04-13",
       "visitType": "Surprise Visit",
       "siteCode": "THI8",
       "siteName": "Mumbai Airport T1 Arrival",
@@ -144,7 +144,7 @@
     },
     {
       "visitId": 15,
-      "visitDate": "2026-04-15",
+      "visitDate": "2026-04-14",
       "visitType": "Informed Visit",
       "siteCode": "THI2",
       "siteName": "ICC Pune",
@@ -154,7 +154,7 @@
     },
     {
       "visitId": 16,
-      "visitDate": "2026-04-16",
+      "visitDate": "2026-04-15",
       "visitType": "Informed Visit",
       "siteCode": "THI9",
       "siteName": "Xperia Mall, Dombivali",
@@ -164,7 +164,7 @@
     },
     {
       "visitId": 17,
-      "visitDate": "2026-04-17",
+      "visitDate": "2026-04-16",
       "visitType": "Informed Visit",
       "siteCode": "THI3",
       "siteName": "Prozone Coimbatore",
@@ -174,7 +174,7 @@
     },
     {
       "visitId": 18,
-      "visitDate": "2026-04-18",
+      "visitDate": "2026-04-17",
       "visitType": "Surprise Visit",
       "siteCode": "THJ2",
       "siteName": "Oberoi Mall Mumbai",
@@ -184,7 +184,7 @@
     },
     {
       "visitId": 19,
-      "visitDate": "2026-04-19",
+      "visitDate": "2026-04-18",
       "visitType": "Surprise Visit",
       "siteCode": "THK1",
       "siteName": "VR Surat",
@@ -194,7 +194,7 @@
     },
     {
       "visitId": 20,
-      "visitDate": "2026-04-20",
+      "visitDate": "2026-04-19",
       "visitType": "Surprise Visit",
       "siteCode": "THP1",
       "siteName": "VR Chennai",
@@ -204,7 +204,7 @@
     },
     {
       "visitId": 21,
-      "visitDate": "2026-04-21",
+      "visitDate": "2026-04-20",
       "visitType": "Surprise Visit",
       "siteCode": "THQ3",
       "siteName": "Forum Esplanadone Bhubn",
@@ -214,7 +214,7 @@
     },
     {
       "visitId": 22,
-      "visitDate": "2026-04-22",
+      "visitDate": "2026-04-21",
       "visitType": "Informed Visit",
       "siteCode": "THP2",
       "siteName": "Indore C21",
@@ -224,7 +224,7 @@
     },
     {
       "visitId": 23,
-      "visitDate": "2026-04-23",
+      "visitDate": "2026-04-22",
       "visitType": "Informed Visit",
       "siteCode": "THQ0",
       "siteName": "Ambuja Raipur",
@@ -234,7 +234,7 @@
     },
     {
       "visitId": 24,
-      "visitDate": "2026-04-24",
+      "visitDate": "2026-04-23",
       "visitType": "Informed Visit",
       "siteCode": "THJ4",
       "siteName": "Mumbai T2A",
@@ -244,7 +244,7 @@
     },
     {
       "visitId": 25,
-      "visitDate": "2026-04-25",
+      "visitDate": "2026-04-24",
       "visitType": "Surprise Visit",
       "siteCode": "THS6",
       "siteName": "Golden Icon",
@@ -254,7 +254,7 @@
     },
     {
       "visitId": 26,
-      "visitDate": "2026-04-26",
+      "visitDate": "2026-04-25",
       "visitType": "Surprise Visit",
       "siteCode": "THM8",
       "siteName": "Mall De Goa",
@@ -264,7 +264,7 @@
     },
     {
       "visitId": 27,
-      "visitDate": "2026-04-27",
+      "visitDate": "2026-04-26",
       "visitType": "Surprise Visit",
       "siteCode": "THS7",
       "siteName": "City Centre Mall AS",
@@ -274,7 +274,7 @@
     },
     {
       "visitId": 28,
-      "visitDate": "2026-04-28",
+      "visitDate": "2026-04-27",
       "visitType": "Surprise Visit",
       "siteCode": "THN2",
       "siteName": "NUCLEUSMALL-JH",
@@ -284,7 +284,7 @@
     },
     {
       "visitId": 29,
-      "visitDate": "2026-04-29",
+      "visitDate": "2026-04-28",
       "visitType": "Informed Visit",
       "siteCode": "THN6",
       "siteName": "Utkal Galleria Bhubaneshwar",
@@ -294,7 +294,7 @@
     },
     {
       "visitId": 30,
-      "visitDate": "2026-04-30",
+      "visitDate": "2026-04-29",
       "visitType": "Informed Visit",
       "siteCode": "THD9",
       "siteName": "Infiniti Malad",
@@ -304,7 +304,7 @@
     },
     {
       "visitId": 31,
-      "visitDate": "2026-05-01",
+      "visitDate": "2026-04-30",
       "visitType": "Informed Visit",
       "siteCode": "THR3",
       "siteName": "South City Mall",
@@ -314,7 +314,7 @@
     },
     {
       "visitId": 32,
-      "visitDate": "2026-05-02",
+      "visitDate": "2026-05-01",
       "visitType": "Surprise Visit",
       "siteCode": "TY4T",
       "siteName": "JWD",
@@ -324,7 +324,7 @@
     },
     {
       "visitId": 33,
-      "visitDate": "2026-05-03",
+      "visitDate": "2026-05-02",
       "visitType": "Surprise Visit",
       "siteCode": "TMA0",
       "siteName": "H N Hospital",
@@ -334,7 +334,7 @@
     },
     {
       "visitId": 34,
-      "visitDate": "2026-05-04",
+      "visitDate": "2026-05-03",
       "visitType": "Surprise Visit",
       "siteCode": "TZKY",
       "siteName": "Guwahati Airport Arrival",
@@ -344,7 +344,7 @@
     },
     {
       "visitId": 35,
-      "visitDate": "2026-05-05",
+      "visitDate": "2026-05-04",
       "visitType": "Surprise Visit",
       "siteCode": "TZKZ",
       "siteName": "Guwahati Airport Departure",
@@ -354,7 +354,7 @@
     },
     {
       "visitId": 36,
-      "visitDate": "2026-05-06",
+      "visitDate": "2026-05-05",
       "visitType": "Informed Visit",
       "siteCode": "TUW4",
       "siteName": "Gokulam",
@@ -364,7 +364,7 @@
     },
     {
       "visitId": 37,
-      "visitDate": "2026-05-07",
+      "visitDate": "2026-05-06",
       "visitType": "Informed Visit",
       "siteCode": "TY7V",
       "siteName": "Hilite",
@@ -374,7 +374,7 @@
     },
     {
       "visitId": 38,
-      "visitDate": "2026-05-08",
+      "visitDate": "2026-05-07",
       "visitType": "Informed Visit",
       "siteCode": "T42A",
       "siteName": "Lulu Trivandrum",
@@ -384,7 +384,7 @@
     },
     {
       "visitId": 39,
-      "visitDate": "2026-05-09",
+      "visitDate": "2026-05-08",
       "visitType": "Surprise Visit",
       "siteCode": "T34O",
       "siteName": "Citadel",
@@ -394,7 +394,7 @@
     },
     {
       "visitId": 40,
-      "visitDate": "2026-05-10",
+      "visitDate": "2026-05-09",
       "visitType": "Surprise Visit",
       "siteCode": "T42C",
       "siteName": "Goa Airport",
@@ -404,7 +404,7 @@
     },
     {
       "visitId": 41,
-      "visitDate": "2026-05-11",
+      "visitDate": "2026-05-10",
       "visitType": "Surprise Visit",
       "siteCode": "TLY7",
       "siteName": "JWD Play",
@@ -414,7 +414,7 @@
     },
     {
       "visitId": 42,
-      "visitDate": "2026-05-12",
+      "visitDate": "2026-05-11",
       "visitType": "Surprise Visit",
       "siteCode": "T61F",
       "siteName": "PMC CHENNAI Play",
@@ -424,7 +424,7 @@
     },
     {
       "visitId": 43,
-      "visitDate": "2026-05-13",
+      "visitDate": "2026-05-12",
       "visitType": "Informed Visit",
       "siteCode": "T77X",
       "siteName": "Palladium Ahmedabad",
@@ -434,7 +434,7 @@
     },
     {
       "visitId": 44,
-      "visitDate": "2026-05-14",
+      "visitDate": "2026-05-13",
       "visitType": "Informed Visit",
       "siteCode": "T26L",
       "siteName": "Kopa Pune",
@@ -444,7 +444,7 @@
     },
     {
       "visitId": 45,
-      "visitDate": "2026-05-15",
+      "visitDate": "2026-05-14",
       "visitType": "Informed Visit",
       "siteCode": "T5PF",
       "siteName": "Ahmd T1A",
@@ -454,7 +454,7 @@
     },
     {
       "visitId": 46,
-      "visitDate": "2026-05-16",
+      "visitDate": "2026-05-15",
       "visitType": "Surprise Visit",
       "siteCode": "T2WF",
       "siteName": "Forum Kochi",
@@ -464,7 +464,7 @@
     },
     {
       "visitId": 47,
-      "visitDate": "2026-05-17",
+      "visitDate": "2026-05-16",
       "visitType": "Surprise Visit",
       "siteCode": "T6AA",
       "siteName": "PROZONE",
@@ -474,7 +474,7 @@
     },
     {
       "visitId": 48,
-      "visitDate": "2026-05-18",
+      "visitDate": "2026-05-17",
       "visitType": "Surprise Visit",
       "siteCode": "T2UO",
       "siteName": "Wakad PUNE MOM",
@@ -484,7 +484,7 @@
     },
     {
       "visitId": 49,
-      "visitDate": "2026-05-19",
+      "visitDate": "2026-05-18",
       "visitType": "Surprise Visit",
       "siteCode": "T7UJ",
       "siteName": "Chennai T1A",
@@ -494,7 +494,7 @@
     },
     {
       "visitId": 50,
-      "visitDate": "2026-05-20",
+      "visitDate": "2026-05-19",
       "visitType": "Informed Visit",
       "siteCode": "T3AA",
       "siteName": "Rajkot",
@@ -504,7 +504,7 @@
     },
     {
       "visitId": 51,
-      "visitDate": "2026-05-21",
+      "visitDate": "2026-05-20",
       "visitType": "Informed Visit",
       "siteCode": "TB2N",
       "siteName": "Palladium, Mumbai (Relocation)",
@@ -514,7 +514,7 @@
     },
     {
       "visitId": 52,
-      "visitDate": "2026-05-22",
+      "visitDate": "2026-05-21",
       "visitType": "Informed Visit",
       "siteCode": "THG9",
       "siteName": "DB City Bhopal",
@@ -524,7 +524,7 @@
     },
     {
       "visitId": 53,
-      "visitDate": "2026-05-23",
+      "visitDate": "2026-05-22",
       "visitType": "Surprise Visit",
       "siteCode": "THE4",
       "siteName": "PMC Pune",
@@ -534,7 +534,7 @@
     },
     {
       "visitId": 54,
-      "visitDate": "2026-05-24",
+      "visitDate": "2026-05-23",
       "visitType": "Surprise Visit",
       "siteCode": "T7ZN",
       "siteName": "R City Ghatkopar",
@@ -544,7 +544,7 @@
     },
     {
       "visitId": 55,
-      "visitDate": "2026-05-25",
+      "visitDate": "2026-05-24",
       "visitType": "Surprise Visit",
       "siteCode": "TB2O",
       "siteName": "Rise-2, Palladium",
@@ -554,7 +554,7 @@
     },
     {
       "visitId": 56,
-      "visitDate": "2026-05-26",
+      "visitDate": "2026-05-25",
       "visitType": "Surprise Visit",
       "siteCode": "T8LI",
       "siteName": "PMCK Kurla",
@@ -564,7 +564,7 @@
     },
     {
       "visitId": 57,
-      "visitDate": "2026-05-27",
+      "visitDate": "2026-05-26",
       "visitType": "Informed Visit",
       "siteCode": "TL6C",
       "siteName": "Rowan Marina Mall- T4IS",
@@ -574,7 +574,7 @@
     },
     {
       "visitId": 58,
-      "visitDate": "2026-05-28",
+      "visitDate": "2026-05-27",
       "visitType": "Informed Visit",
       "siteCode": "TL6N",
       "siteName": "Rowan Jamnagar",
@@ -584,7 +584,7 @@
     },
     {
       "visitId": 59,
-      "visitDate": "2026-05-29",
+      "visitDate": "2026-05-28",
       "visitType": "Informed Visit",
       "siteCode": "TF5Y",
       "siteName": "Oberoi Borivali",
@@ -594,7 +594,7 @@
     },
     {
       "visitId": 60,
-      "visitDate": "2026-05-30",
+      "visitDate": "2026-05-29",
       "visitType": "Surprise Visit",
       "siteCode": "TBIM",
       "siteName": "Zora Mall",
@@ -604,7 +604,7 @@
     },
     {
       "visitId": 61,
-      "visitDate": "2026-05-31",
+      "visitDate": "2026-05-30",
       "visitType": "Surprise Visit",
       "siteCode": "THE2",
       "siteName": "Alpha One Ahmedabad",
@@ -614,7 +614,7 @@
     },
     {
       "visitId": 62,
-      "visitDate": "2026-06-01",
+      "visitDate": "2026-05-31",
       "visitType": "Surprise Visit",
       "siteCode": "THE9",
       "siteName": "Viviana Thane",
@@ -624,7 +624,7 @@
     },
     {
       "visitId": 63,
-      "visitDate": "2026-06-02",
+      "visitDate": "2026-06-01",
       "visitType": "Surprise Visit",
       "siteCode": "THF0",
       "siteName": "PMC Chennai",
@@ -634,7 +634,7 @@
     },
     {
       "visitId": 64,
-      "visitDate": "2026-06-03",
+      "visitDate": "2026-06-02",
       "visitType": "Informed Visit",
       "siteCode": "THF1",
       "siteName": "Brookfields Coimbatore",
@@ -644,7 +644,7 @@
     },
     {
       "visitId": 65,
-      "visitDate": "2026-06-04",
+      "visitDate": "2026-06-03",
       "visitType": "Informed Visit",
       "siteCode": "THF4",
       "siteName": "Quest Kolkatta",
@@ -654,7 +654,7 @@
     },
     {
       "visitId": 66,
-      "visitDate": "2026-06-05",
+      "visitDate": "2026-06-04",
       "visitType": "Informed Visit",
       "siteCode": "THF6",
       "siteName": "Mumbai T2D Airport",
@@ -664,7 +664,7 @@
     },
     {
       "visitId": 67,
-      "visitDate": "2026-06-06",
+      "visitDate": "2026-06-05",
       "visitType": "Surprise Visit",
       "siteCode": "THG2",
       "siteName": "Treasure Island Indore",
@@ -674,7 +674,7 @@
     },
     {
       "visitId": 68,
-      "visitDate": "2026-06-07",
+      "visitDate": "2026-06-06",
       "visitType": "Surprise Visit",
       "siteCode": "THG5",
       "siteName": "Vadodara",
@@ -684,7 +684,7 @@
     },
     {
       "visitId": 69,
-      "visitDate": "2026-06-08",
+      "visitDate": "2026-06-07",
       "visitType": "Surprise Visit",
       "siteCode": "THG7",
       "siteName": "Forum Chennai",
@@ -694,7 +694,7 @@
     },
     {
       "visitId": 70,
-      "visitDate": "2026-06-09",
+      "visitDate": "2026-06-08",
       "visitType": "Informed Visit",
       "siteCode": "THH8",
       "siteName": "L&T Seawoods",
@@ -704,7 +704,7 @@
     },
     {
       "visitId": 71,
-      "visitDate": "2026-06-10",
+      "visitDate": "2026-06-09",
       "visitType": "Informed Visit",
       "siteCode": "THI5",
       "siteName": "Vega Siliguri",
@@ -714,7 +714,7 @@
     },
     {
       "visitId": 72,
-      "visitDate": "2026-06-11",
+      "visitDate": "2026-06-10",
       "visitType": "Informed Visit",
       "siteCode": "THI8",
       "siteName": "Mumbai Airport T1 Arrival",
@@ -724,7 +724,7 @@
     },
     {
       "visitId": 73,
-      "visitDate": "2026-06-12",
+      "visitDate": "2026-06-11",
       "visitType": "Surprise Visit",
       "siteCode": "THI2",
       "siteName": "ICC Pune",
@@ -734,7 +734,7 @@
     },
     {
       "visitId": 74,
-      "visitDate": "2026-06-13",
+      "visitDate": "2026-06-12",
       "visitType": "Surprise Visit",
       "siteCode": "THI9",
       "siteName": "Xperia Mall, Dombivali",
@@ -744,7 +744,7 @@
     },
     {
       "visitId": 75,
-      "visitDate": "2026-06-14",
+      "visitDate": "2026-06-13",
       "visitType": "Surprise Visit",
       "siteCode": "THI3",
       "siteName": "Prozone Coimbatore",
@@ -754,7 +754,7 @@
     },
     {
       "visitId": 76,
-      "visitDate": "2026-06-15",
+      "visitDate": "2026-06-14",
       "visitType": "Surprise Visit",
       "siteCode": "THJ2",
       "siteName": "Oberoi Mall Mumbai",
@@ -764,7 +764,7 @@
     },
     {
       "visitId": 77,
-      "visitDate": "2026-06-16",
+      "visitDate": "2026-06-15",
       "visitType": "Surprise Visit",
       "siteCode": "THK1",
       "siteName": "VR Surat",
@@ -774,7 +774,7 @@
     },
     {
       "visitId": 78,
-      "visitDate": "2026-06-17",
+      "visitDate": "2026-06-16",
       "visitType": "Informed Visit",
       "siteCode": "THQ3",
       "siteName": "Forum Esplanadone Bhubn",
@@ -784,7 +784,7 @@
     },
     {
       "visitId": 79,
-      "visitDate": "2026-06-18",
+      "visitDate": "2026-06-17",
       "visitType": "Informed Visit",
       "siteCode": "THP2",
       "siteName": "Indore C21",
@@ -794,7 +794,7 @@
     },
     {
       "visitId": 80,
-      "visitDate": "2026-06-19",
+      "visitDate": "2026-06-18",
       "visitType": "Informed Visit",
       "siteCode": "THQ0",
       "siteName": "Ambuja Raipur",
@@ -804,7 +804,7 @@
     },
     {
       "visitId": 81,
-      "visitDate": "2026-06-20",
+      "visitDate": "2026-06-19",
       "visitType": "Surprise Visit",
       "siteCode": "THJ4",
       "siteName": "Mumbai T2A",
@@ -814,7 +814,7 @@
     },
     {
       "visitId": 82,
-      "visitDate": "2026-06-21",
+      "visitDate": "2026-06-20",
       "visitType": "Surprise Visit",
       "siteCode": "THS6",
       "siteName": "Golden Icon",
@@ -824,7 +824,7 @@
     },
     {
       "visitId": 83,
-      "visitDate": "2026-06-22",
+      "visitDate": "2026-06-21",
       "visitType": "Surprise Visit",
       "siteCode": "THM8",
       "siteName": "Mall De Goa",
@@ -834,7 +834,7 @@
     },
     {
       "visitId": 84,
-      "visitDate": "2026-06-23",
+      "visitDate": "2026-06-22",
       "visitType": "Surprise Visit",
       "siteCode": "THS7",
       "siteName": "City Centre Mall AS",
@@ -844,7 +844,7 @@
     },
     {
       "visitId": 85,
-      "visitDate": "2026-06-24",
+      "visitDate": "2026-06-23",
       "visitType": "Informed Visit",
       "siteCode": "THN2",
       "siteName": "NUCLEUSMALL-JH",
@@ -854,7 +854,7 @@
     },
     {
       "visitId": 86,
-      "visitDate": "2026-06-25",
+      "visitDate": "2026-06-24",
       "visitType": "Informed Visit",
       "siteCode": "THN6",
       "siteName": "Utkal Galleria Bhubaneshwar",
@@ -864,7 +864,7 @@
     },
     {
       "visitId": 87,
-      "visitDate": "2026-06-26",
+      "visitDate": "2026-06-25",
       "visitType": "Informed Visit",
       "siteCode": "THD9",
       "siteName": "Infiniti Malad",
@@ -874,7 +874,7 @@
     },
     {
       "visitId": 88,
-      "visitDate": "2026-06-27",
+      "visitDate": "2026-06-26",
       "visitType": "Surprise Visit",
       "siteCode": "THR3",
       "siteName": "South City Mall",
@@ -884,7 +884,7 @@
     },
     {
       "visitId": 89,
-      "visitDate": "2026-06-28",
+      "visitDate": "2026-06-27",
       "visitType": "Surprise Visit",
       "siteCode": "TY4T",
       "siteName": "JWD",
@@ -894,7 +894,7 @@
     },
     {
       "visitId": 90,
-      "visitDate": "2026-06-29",
+      "visitDate": "2026-06-28",
       "visitType": "Surprise Visit",
       "siteCode": "TMA0",
       "siteName": "H N Hospital",
@@ -904,7 +904,7 @@
     },
     {
       "visitId": 91,
-      "visitDate": "2026-06-30",
+      "visitDate": "2026-06-29",
       "visitType": "Surprise Visit",
       "siteCode": "TZKY",
       "siteName": "Guwahati Airport Arrival",
@@ -914,7 +914,7 @@
     },
     {
       "visitId": 92,
-      "visitDate": "2026-04-01",
+      "visitDate": "2026-03-31",
       "visitType": "Informed Visit",
       "siteCode": "TZKZ",
       "siteName": "Guwahati Airport Departure",
@@ -924,7 +924,7 @@
     },
     {
       "visitId": 93,
-      "visitDate": "2026-04-02",
+      "visitDate": "2026-04-01",
       "visitType": "Informed Visit",
       "siteCode": "TUW4",
       "siteName": "Gokulam",
@@ -934,7 +934,7 @@
     },
     {
       "visitId": 94,
-      "visitDate": "2026-04-03",
+      "visitDate": "2026-04-02",
       "visitType": "Informed Visit",
       "siteCode": "TY7V",
       "siteName": "Hilite",
@@ -944,7 +944,7 @@
     },
     {
       "visitId": 95,
-      "visitDate": "2026-04-04",
+      "visitDate": "2026-04-03",
       "visitType": "Surprise Visit",
       "siteCode": "T42A",
       "siteName": "Lulu Trivandrum",
@@ -954,7 +954,7 @@
     },
     {
       "visitId": 96,
-      "visitDate": "2026-06-19",
+      "visitDate": "2026-06-18",
       "visitType": "Surprise Visit",
       "siteCode": "T34O",
       "siteName": "Citadel",
@@ -964,7 +964,7 @@
     },
     {
       "visitId": 97,
-      "visitDate": "2026-04-06",
+      "visitDate": "2026-04-05",
       "visitType": "Surprise Visit",
       "siteCode": "T42C",
       "siteName": "Goa Airport",
@@ -974,7 +974,7 @@
     },
     {
       "visitId": 98,
-      "visitDate": "2026-04-07",
+      "visitDate": "2026-04-06",
       "visitType": "Surprise Visit",
       "siteCode": "TLY7",
       "siteName": "JWD Play",
@@ -984,7 +984,7 @@
     },
     {
       "visitId": 99,
-      "visitDate": "2026-06-25",
+      "visitDate": "2026-06-24",
       "visitType": "Informed Visit",
       "siteCode": "T61F",
       "siteName": "PMC CHENNAI Play",
@@ -994,7 +994,7 @@
     },
     {
       "visitId": 100,
-      "visitDate": "2026-04-09",
+      "visitDate": "2026-04-08",
       "visitType": "Informed Visit",
       "siteCode": "T77X",
       "siteName": "Palladium Ahmedabad",
@@ -1004,7 +1004,7 @@
     },
     {
       "visitId": 101,
-      "visitDate": "2026-04-10",
+      "visitDate": "2026-04-09",
       "visitType": "Informed Visit",
       "siteCode": "T26L",
       "siteName": "Kopa Pune",
@@ -1014,7 +1014,7 @@
     },
     {
       "visitId": 102,
-      "visitDate": "2026-04-11",
+      "visitDate": "2026-04-10",
       "visitType": "Surprise Visit",
       "siteCode": "T5PF",
       "siteName": "Ahmd T1A",
@@ -1024,7 +1024,7 @@
     },
     {
       "visitId": 103,
-      "visitDate": "2026-04-12",
+      "visitDate": "2026-04-11",
       "visitType": "Surprise Visit",
       "siteCode": "T2WF",
       "siteName": "Forum Kochi",
@@ -1034,7 +1034,7 @@
     },
     {
       "visitId": 104,
-      "visitDate": "2026-04-13",
+      "visitDate": "2026-04-12",
       "visitType": "Surprise Visit",
       "siteCode": "T6AA",
       "siteName": "PROZONE",
@@ -1044,7 +1044,7 @@
     },
     {
       "visitId": 105,
-      "visitDate": "2026-04-14",
+      "visitDate": "2026-04-13",
       "visitType": "Surprise Visit",
       "siteCode": "T2UO",
       "siteName": "Wakad PUNE MOM",
@@ -1054,7 +1054,7 @@
     },
     {
       "visitId": 106,
-      "visitDate": "2026-04-15",
+      "visitDate": "2026-04-14",
       "visitType": "Informed Visit",
       "siteCode": "T7UJ",
       "siteName": "Chennai T1A",
@@ -1064,7 +1064,7 @@
     },
     {
       "visitId": 107,
-      "visitDate": "2026-04-16",
+      "visitDate": "2026-04-15",
       "visitType": "Informed Visit",
       "siteCode": "T3AA",
       "siteName": "Rajkot",
@@ -1074,7 +1074,7 @@
     },
     {
       "visitId": 108,
-      "visitDate": "2026-04-17",
+      "visitDate": "2026-04-16",
       "visitType": "Informed Visit",
       "siteCode": "TB2N",
       "siteName": "Palladium, Mumbai (Relocation)",
@@ -1084,7 +1084,7 @@
     },
     {
       "visitId": 109,
-      "visitDate": "2026-04-18",
+      "visitDate": "2026-04-17",
       "visitType": "Surprise Visit",
       "siteCode": "THG9",
       "siteName": "DB City Bhopal",
@@ -1094,7 +1094,7 @@
     },
     {
       "visitId": 110,
-      "visitDate": "2026-04-19",
+      "visitDate": "2026-04-18",
       "visitType": "Surprise Visit",
       "siteCode": "THE4",
       "siteName": "PMC Pune",
@@ -1104,7 +1104,7 @@
     },
     {
       "visitId": 111,
-      "visitDate": "2026-04-20",
+      "visitDate": "2026-04-19",
       "visitType": "Surprise Visit",
       "siteCode": "T7ZN",
       "siteName": "R City Ghatkopar",
@@ -1114,7 +1114,7 @@
     },
     {
       "visitId": 112,
-      "visitDate": "2026-04-21",
+      "visitDate": "2026-04-20",
       "visitType": "Surprise Visit",
       "siteCode": "TB2O",
       "siteName": "Rise-2, Palladium",
@@ -1124,7 +1124,7 @@
     },
     {
       "visitId": 113,
-      "visitDate": "2026-04-22",
+      "visitDate": "2026-04-21",
       "visitType": "Informed Visit",
       "siteCode": "T8LI",
       "siteName": "PMCK Kurla",
@@ -1134,7 +1134,7 @@
     },
     {
       "visitId": 114,
-      "visitDate": "2026-04-23",
+      "visitDate": "2026-04-22",
       "visitType": "Informed Visit",
       "siteCode": "TL6C",
       "siteName": "Rowan Marina Mall- T4IS",
@@ -1144,7 +1144,7 @@
     },
     {
       "visitId": 115,
-      "visitDate": "2026-04-24",
+      "visitDate": "2026-04-23",
       "visitType": "Informed Visit",
       "siteCode": "TL6N",
       "siteName": "Rowan Jamnagar",
@@ -1154,7 +1154,7 @@
     },
     {
       "visitId": 116,
-      "visitDate": "2026-04-25",
+      "visitDate": "2026-04-24",
       "visitType": "Surprise Visit",
       "siteCode": "TF5Y",
       "siteName": "Oberoi Borivali",
@@ -1164,7 +1164,7 @@
     },
     {
       "visitId": 117,
-      "visitDate": "2026-04-26",
+      "visitDate": "2026-04-25",
       "visitType": "Surprise Visit",
       "siteCode": "TBIM",
       "siteName": "Zora Mall",
@@ -1174,7 +1174,7 @@
     },
     {
       "visitId": 118,
-      "visitDate": "2026-04-08",
+      "visitDate": "2026-04-07",
       "visitType": "Informed Visit",
       "siteCode": "THE0",
       "siteName": "PMC Bangalore",
@@ -1184,7 +1184,7 @@
     },
     {
       "visitId": 119,
-      "visitDate": "2026-04-02",
+      "visitDate": "2026-04-01",
       "visitType": "Informed Visit",
       "siteCode": "THE1",
       "siteName": "Elante Chandigarh",
@@ -1194,7 +1194,7 @@
     },
     {
       "visitId": 120,
-      "visitDate": "2026-04-03",
+      "visitDate": "2026-04-02",
       "visitType": "Informed Visit",
       "siteCode": "THF2",
       "siteName": "Logix Mall Noida",
@@ -1204,7 +1204,7 @@
     },
     {
       "visitId": 121,
-      "visitDate": "2026-04-04",
+      "visitDate": "2026-04-03",
       "visitType": "Surprise Visit",
       "siteCode": "THF9",
       "siteName": "Amb Gurg Delhi",
@@ -1214,7 +1214,7 @@
     },
     {
       "visitId": 122,
-      "visitDate": "2026-06-19",
+      "visitDate": "2026-06-18",
       "visitType": "Surprise Visit",
       "siteCode": "THG3",
       "siteName": "Forum Sujana Hyderabad",
@@ -1224,7 +1224,7 @@
     },
     {
       "visitId": 123,
-      "visitDate": "2026-04-06",
+      "visitDate": "2026-04-05",
       "visitType": "Surprise Visit",
       "siteCode": "THG4",
       "siteName": "1MG Bangalore",
@@ -1234,7 +1234,7 @@
     },
     {
       "visitId": 124,
-      "visitDate": "2026-04-07",
+      "visitDate": "2026-04-06",
       "visitType": "Surprise Visit",
       "siteCode": "THG8",
       "siteName": "Pavilion Ludhiana",
@@ -1244,7 +1244,7 @@
     },
     {
       "visitId": 125,
-      "visitDate": "2026-06-25",
+      "visitDate": "2026-06-24",
       "visitType": "Informed Visit",
       "siteCode": "THH3",
       "siteName": "Delhi Selectcity",
@@ -1254,7 +1254,7 @@
     },
     {
       "visitId": 126,
-      "visitDate": "2026-04-09",
+      "visitDate": "2026-04-08",
       "visitType": "Informed Visit",
       "siteCode": "THF8",
       "siteName": "Delhi T3A Airport",
@@ -1264,7 +1264,7 @@
     },
     {
       "visitId": 127,
-      "visitDate": "2026-04-10",
+      "visitDate": "2026-04-09",
       "visitType": "Informed Visit",
       "siteCode": "THH2",
       "siteName": "Delhi Pacific",
@@ -1274,7 +1274,7 @@
     },
     {
       "visitId": 128,
-      "visitDate": "2026-04-11",
+      "visitDate": "2026-04-10",
       "visitType": "Surprise Visit",
       "siteCode": "THI7",
       "siteName": "WTP Jaipur",
@@ -1284,7 +1284,7 @@
     },
     {
       "visitId": 129,
-      "visitDate": "2026-04-12",
+      "visitDate": "2026-04-11",
       "visitType": "Surprise Visit",
       "siteCode": "THJ0",
       "siteName": "Inorbit Mall, Hyderabad",
@@ -1294,7 +1294,7 @@
     },
     {
       "visitId": 130,
-      "visitDate": "2026-04-13",
+      "visitDate": "2026-04-12",
       "visitType": "Surprise Visit",
       "siteCode": "THJ1",
       "siteName": "Alphaone, Amritsar",
@@ -1304,7 +1304,7 @@
     },
     {
       "visitId": 131,
-      "visitDate": "2026-04-14",
+      "visitDate": "2026-04-13",
       "visitType": "Surprise Visit",
       "siteCode": "THO9",
       "siteName": "UB City Bangalore",
@@ -1314,7 +1314,7 @@
     },
     {
       "visitId": 132,
-      "visitDate": "2026-04-15",
+      "visitDate": "2026-04-14",
       "visitType": "Informed Visit",
       "siteCode": "THO8",
       "siteName": "Shantiniketan Bangalore",
@@ -1324,7 +1324,7 @@
     },
     {
       "visitId": 133,
-      "visitDate": "2026-04-16",
+      "visitDate": "2026-04-15",
       "visitType": "Informed Visit",
       "siteCode": "THN3",
       "siteName": "L&T Punjugutta",
@@ -1334,7 +1334,7 @@
     },
     {
       "visitId": 134,
-      "visitDate": "2026-04-17",
+      "visitDate": "2026-04-16",
       "visitType": "Informed Visit",
       "siteCode": "THK0",
       "siteName": "Mall of India, Noida New",
@@ -1344,7 +1344,7 @@
     },
     {
       "visitId": 135,
-      "visitDate": "2026-04-18",
+      "visitDate": "2026-04-17",
       "visitType": "Surprise Visit",
       "siteCode": "THQ2",
       "siteName": "Forum Mysore",
@@ -1354,7 +1354,7 @@
     },
     {
       "visitId": 136,
-      "visitDate": "2026-04-19",
+      "visitDate": "2026-04-18",
       "visitType": "Surprise Visit",
       "siteCode": "THR0",
       "siteName": "D Centre Vijaywada",
@@ -1364,7 +1364,7 @@
     },
     {
       "visitId": 137,
-      "visitDate": "2026-04-20",
+      "visitDate": "2026-04-19",
       "visitType": "Surprise Visit",
       "siteCode": "THM0",
       "siteName": "Ardee Mall, Gurgaon",
@@ -1374,7 +1374,7 @@
     },
     {
       "visitId": 138,
-      "visitDate": "2026-04-21",
+      "visitDate": "2026-04-20",
       "visitType": "Surprise Visit",
       "siteCode": "THP5",
       "siteName": "Sarath City Capital",
@@ -1384,7 +1384,7 @@
     },
     {
       "visitId": 139,
-      "visitDate": "2026-04-22",
+      "visitDate": "2026-04-21",
       "visitType": "Informed Visit",
       "siteCode": "THP7",
       "siteName": "Wave mall Jammu",
@@ -1394,7 +1394,7 @@
     },
     {
       "visitId": 140,
-      "visitDate": "2026-04-23",
+      "visitDate": "2026-04-22",
       "visitType": "Informed Visit",
       "siteCode": "THS5",
       "siteName": "Brigade Orion",
@@ -1404,7 +1404,7 @@
     },
     {
       "visitId": 141,
-      "visitDate": "2026-04-24",
+      "visitDate": "2026-04-23",
       "visitType": "Informed Visit",
       "siteCode": "THM2",
       "siteName": "Z Square Kanpur",
@@ -1414,7 +1414,7 @@
     },
     {
       "visitId": 142,
-      "visitDate": "2026-04-25",
+      "visitDate": "2026-04-24",
       "visitType": "Surprise Visit",
       "siteCode": "THS8",
       "siteName": "Gaur Central",
@@ -1424,7 +1424,7 @@
     },
     {
       "visitId": 143,
-      "visitDate": "2026-04-26",
+      "visitDate": "2026-04-25",
       "visitType": "Surprise Visit",
       "siteCode": "TJU3",
       "siteName": "GSM Mall Hyd",
@@ -1434,7 +1434,7 @@
     },
     {
       "visitId": 144,
-      "visitDate": "2026-04-27",
+      "visitDate": "2026-04-26",
       "visitType": "Surprise Visit",
       "siteCode": "TJU4",
       "siteName": "DSL Mall Hyd",
@@ -1444,7 +1444,7 @@
     },
     {
       "visitId": 145,
-      "visitDate": "2026-04-28",
+      "visitDate": "2026-04-27",
       "visitType": "Surprise Visit",
       "siteCode": "TJY4",
       "siteName": "Airia mall",
@@ -1454,7 +1454,7 @@
     },
     {
       "visitId": 146,
-      "visitDate": "2026-04-29",
+      "visitDate": "2026-04-28",
       "visitType": "Informed Visit",
       "siteCode": "TJU6",
       "siteName": "Palassio Lucknow",
@@ -1464,7 +1464,7 @@
     },
     {
       "visitId": 147,
-      "visitDate": "2026-04-30",
+      "visitDate": "2026-04-29",
       "visitType": "Informed Visit",
       "siteCode": "TLX5",
       "siteName": "Vegas dwarka",
@@ -1474,7 +1474,7 @@
     },
     {
       "visitId": 148,
-      "visitDate": "2026-05-01",
+      "visitDate": "2026-04-30",
       "visitType": "Informed Visit",
       "siteCode": "TPV5",
       "siteName": "Bangalore Departure",
@@ -1484,7 +1484,7 @@
     },
     {
       "visitId": 149,
-      "visitDate": "2026-05-02",
+      "visitDate": "2026-05-01",
       "visitType": "Surprise Visit",
       "siteCode": "TXPH",
       "siteName": "Ambala",
@@ -1494,7 +1494,7 @@
     },
     {
       "visitId": 150,
-      "visitDate": "2026-05-03",
+      "visitDate": "2026-05-02",
       "visitType": "Surprise Visit",
       "siteCode": "TWR1",
       "siteName": "Vizag",
@@ -1504,7 +1504,7 @@
     },
     {
       "visitId": 151,
-      "visitDate": "2026-05-04",
+      "visitDate": "2026-05-03",
       "visitType": "Surprise Visit",
       "siteCode": "TXGB",
       "siteName": "HSR",
@@ -1514,7 +1514,7 @@
     },
     {
       "visitId": 152,
-      "visitDate": "2026-05-05",
+      "visitDate": "2026-05-04",
       "visitType": "Surprise Visit",
       "siteCode": "TXUT",
       "siteName": "VAISHALI",
@@ -1524,7 +1524,7 @@
     },
     {
       "visitId": 153,
-      "visitDate": "2026-05-06",
+      "visitDate": "2026-05-05",
       "visitType": "Informed Visit",
       "siteCode": "TXYT",
       "siteName": "Good Earth",
@@ -1534,7 +1534,7 @@
     },
     {
       "visitId": 154,
-      "visitDate": "2026-05-07",
+      "visitDate": "2026-05-06",
       "visitType": "Informed Visit",
       "siteCode": "TXSG",
       "siteName": "Indiranagar",
@@ -1544,7 +1544,7 @@
     },
     {
       "visitId": 155,
-      "visitDate": "2026-05-08",
+      "visitDate": "2026-05-07",
       "visitType": "Informed Visit",
       "siteCode": "TZ8A",
       "siteName": "Dehradun",
@@ -1554,7 +1554,7 @@
     },
     {
       "visitId": 156,
-      "visitDate": "2026-05-09",
+      "visitDate": "2026-05-08",
       "visitType": "Surprise Visit",
       "siteCode": "TXSI",
       "siteName": "HYD BANJARA HILLS",
@@ -1564,7 +1564,7 @@
     },
     {
       "visitId": 157,
-      "visitDate": "2026-05-10",
+      "visitDate": "2026-05-09",
       "visitType": "Surprise Visit",
       "siteCode": "TZ8Z",
       "siteName": "Vega City",
@@ -1574,7 +1574,7 @@
     },
     {
       "visitId": 158,
-      "visitDate": "2026-05-11",
+      "visitDate": "2026-05-10",
       "visitType": "Surprise Visit",
       "siteCode": "TASG",
       "siteName": "Delhi Airport T1A",
@@ -1584,7 +1584,7 @@
     },
     {
       "visitId": 159,
-      "visitDate": "2026-05-12",
+      "visitDate": "2026-05-11",
       "visitType": "Surprise Visit",
       "siteCode": "TAUN",
       "siteName": "Udhaipur Celebration",
@@ -1594,7 +1594,7 @@
     },
     {
       "visitId": 160,
-      "visitDate": "2026-05-13",
+      "visitDate": "2026-05-12",
       "visitType": "Informed Visit",
       "siteCode": "TXR2",
       "siteName": "Zirakpur",
@@ -1604,7 +1604,7 @@
     },
     {
       "visitId": 161,
-      "visitDate": "2026-05-14",
+      "visitDate": "2026-05-13",
       "visitType": "Informed Visit",
       "siteCode": "T38E",
       "siteName": "Lulu Lko",
@@ -1614,7 +1614,7 @@
     },
     {
       "visitId": 162,
-      "visitDate": "2026-05-15",
+      "visitDate": "2026-05-14",
       "visitType": "Informed Visit",
       "siteCode": "T36H",
       "siteName": "Falcon City Bangalore",
@@ -1624,7 +1624,7 @@
     },
     {
       "visitId": 163,
-      "visitDate": "2026-05-16",
+      "visitDate": "2026-05-15",
       "visitType": "Surprise Visit",
       "siteCode": "TAHY",
       "siteName": "WMG Play",
@@ -1634,7 +1634,7 @@
     },
     {
       "visitId": 164,
-      "visitDate": "2026-05-17",
+      "visitDate": "2026-05-16",
       "visitType": "Surprise Visit",
       "siteCode": "T36O",
       "siteName": "Bangalore Airport T2",
@@ -1644,7 +1644,7 @@
     },
     {
       "visitId": 165,
-      "visitDate": "2026-05-18",
+      "visitDate": "2026-05-17",
       "visitType": "Surprise Visit",
       "siteCode": "T2DD",
       "siteName": "CP67",
@@ -1654,7 +1654,7 @@
     },
     {
       "visitId": 166,
-      "visitDate": "2026-05-19",
+      "visitDate": "2026-05-18",
       "visitType": "Surprise Visit",
       "siteCode": "T2DE",
       "siteName": "Lucknow Airport Departure",
@@ -1664,7 +1664,7 @@
     },
     {
       "visitId": 167,
-      "visitDate": "2026-05-20",
+      "visitDate": "2026-05-19",
       "visitType": "Informed Visit",
       "siteCode": "T2DK",
       "siteName": "Lucknow Airport Arrival",
@@ -1674,7 +1674,7 @@
     },
     {
       "visitId": 168,
-      "visitDate": "2026-05-21",
+      "visitDate": "2026-05-20",
       "visitType": "Informed Visit",
       "siteCode": "T2MI",
       "siteName": "MALL OF ASIA",
@@ -1684,7 +1684,7 @@
     },
     {
       "visitId": 169,
-      "visitDate": "2026-05-22",
+      "visitDate": "2026-05-21",
       "visitType": "Informed Visit",
       "siteCode": "T0ZV",
       "siteName": "Delhi T1D",
@@ -1694,7 +1694,7 @@
     },
     {
       "visitId": 170,
-      "visitDate": "2026-05-23",
+      "visitDate": "2026-05-22",
       "visitType": "Surprise Visit",
       "siteCode": "TF5T",
       "siteName": "Hamleys Pacific D21",
@@ -1704,7 +1704,7 @@
     },
     {
       "visitId": 171,
-      "visitDate": "2026-05-24",
+      "visitDate": "2026-05-23",
       "visitType": "Surprise Visit",
       "siteCode": "TL6O",
       "siteName": "Hamleys IRIS(TASD)",
@@ -1714,7 +1714,7 @@
     },
     {
       "visitId": 172,
-      "visitDate": "2026-05-25",
+      "visitDate": "2026-05-24",
       "visitType": "Surprise Visit",
       "siteCode": "TK0G",
       "siteName": "Rowan garuda( T9MV",
@@ -1724,7 +1724,7 @@
     },
     {
       "visitId": 173,
-      "visitDate": "2026-05-26",
+      "visitDate": "2026-05-25",
       "visitType": "Surprise Visit",
       "siteCode": "THE8",
       "siteName": "AVK Delhi",
@@ -1734,7 +1734,7 @@
     },
     {
       "visitId": 174,
-      "visitDate": "2026-05-27",
+      "visitDate": "2026-05-26",
       "visitType": "Informed Visit",
       "siteCode": "TB6V",
       "siteName": "Unity Elegante",
@@ -1744,7 +1744,7 @@
     },
     {
       "visitId": 175,
-      "visitDate": "2026-05-28",
+      "visitDate": "2026-05-27",
       "visitType": "Informed Visit",
       "siteCode": "TL9A",
       "siteName": "Lullu Bangalore",
@@ -1754,7 +1754,7 @@
     },
     {
       "visitId": 176,
-      "visitDate": "2026-05-29",
+      "visitDate": "2026-05-28",
       "visitType": "Informed Visit",
       "siteCode": "TBAV",
       "siteName": "LAKESHORE",
@@ -1764,7 +1764,7 @@
     },
     {
       "visitId": 177,
-      "visitDate": "2026-05-30",
+      "visitDate": "2026-05-29",
       "visitType": "Surprise Visit",
       "siteCode": "TM1F",
       "siteName": "Model Town Jalandhar",
@@ -1774,7 +1774,7 @@
     },
     {
       "visitId": 178,
-      "visitDate": "2026-05-31",
+      "visitDate": "2026-05-30",
       "visitType": "Surprise Visit",
       "siteCode": "TM1H",
       "siteName": "Pacific Faridabad",
@@ -1784,7 +1784,7 @@
     },
     {
       "visitId": 179,
-      "visitDate": "2026-06-01",
+      "visitDate": "2026-05-31",
       "visitType": "Surprise Visit",
       "siteCode": "TBC7",
       "siteName": "Creekside Doraha",
@@ -1794,7 +1794,7 @@
     },
     {
       "visitId": 180,
-      "visitDate": "2026-06-02",
+      "visitDate": "2026-06-01",
       "visitType": "Surprise Visit",
       "siteCode": "THE0",
       "siteName": "PMC Bangalore",
@@ -1804,7 +1804,7 @@
     },
     {
       "visitId": 181,
-      "visitDate": "2026-06-03",
+      "visitDate": "2026-06-02",
       "visitType": "Informed Visit",
       "siteCode": "THE1",
       "siteName": "Elante Chandigarh",
@@ -1814,7 +1814,7 @@
     },
     {
       "visitId": 182,
-      "visitDate": "2026-06-04",
+      "visitDate": "2026-06-03",
       "visitType": "Informed Visit",
       "siteCode": "THF2",
       "siteName": "Logix Mall Noida",
@@ -1824,7 +1824,7 @@
     },
     {
       "visitId": 183,
-      "visitDate": "2026-06-05",
+      "visitDate": "2026-06-04",
       "visitType": "Informed Visit",
       "siteCode": "THF9",
       "siteName": "Amb Gurg Delhi",
@@ -1834,7 +1834,7 @@
     },
     {
       "visitId": 184,
-      "visitDate": "2026-06-06",
+      "visitDate": "2026-06-05",
       "visitType": "Surprise Visit",
       "siteCode": "THG3",
       "siteName": "Forum Sujana Hyderabad",
@@ -1844,7 +1844,7 @@
     },
     {
       "visitId": 185,
-      "visitDate": "2026-06-07",
+      "visitDate": "2026-06-06",
       "visitType": "Surprise Visit",
       "siteCode": "THG4",
       "siteName": "1MG Bangalore",
@@ -1854,7 +1854,7 @@
     },
     {
       "visitId": 186,
-      "visitDate": "2026-06-08",
+      "visitDate": "2026-06-07",
       "visitType": "Surprise Visit",
       "siteCode": "THH3",
       "siteName": "Delhi Selectcity",
@@ -1864,7 +1864,7 @@
     },
     {
       "visitId": 187,
-      "visitDate": "2026-06-09",
+      "visitDate": "2026-06-08",
       "visitType": "Informed Visit",
       "siteCode": "THF8",
       "siteName": "Delhi T3A Airport",
@@ -1874,7 +1874,7 @@
     },
     {
       "visitId": 188,
-      "visitDate": "2026-06-10",
+      "visitDate": "2026-06-09",
       "visitType": "Informed Visit",
       "siteCode": "THH2",
       "siteName": "Delhi Pacific",
@@ -1884,7 +1884,7 @@
     },
     {
       "visitId": 189,
-      "visitDate": "2026-06-11",
+      "visitDate": "2026-06-10",
       "visitType": "Informed Visit",
       "siteCode": "THJ0",
       "siteName": "Inorbit Mall, Hyderabad",
@@ -1894,7 +1894,7 @@
     },
     {
       "visitId": 190,
-      "visitDate": "2026-06-12",
+      "visitDate": "2026-06-11",
       "visitType": "Surprise Visit",
       "siteCode": "THO9",
       "siteName": "UB City Bangalore",
@@ -1904,7 +1904,7 @@
     },
     {
       "visitId": 191,
-      "visitDate": "2026-06-13",
+      "visitDate": "2026-06-12",
       "visitType": "Surprise Visit",
       "siteCode": "THO8",
       "siteName": "Shantiniketan Bangalore",
@@ -1914,7 +1914,7 @@
     },
     {
       "visitId": 192,
-      "visitDate": "2026-06-14",
+      "visitDate": "2026-06-13",
       "visitType": "Surprise Visit",
       "siteCode": "THN3",
       "siteName": "L&T Punjugutta",
@@ -1924,7 +1924,7 @@
     },
     {
       "visitId": 193,
-      "visitDate": "2026-06-15",
+      "visitDate": "2026-06-14",
       "visitType": "Surprise Visit",
       "siteCode": "THK0",
       "siteName": "Mall of India, Noida New",
@@ -1934,7 +1934,7 @@
     },
     {
       "visitId": 194,
-      "visitDate": "2026-06-16",
+      "visitDate": "2026-06-15",
       "visitType": "Surprise Visit",
       "siteCode": "THQ2",
       "siteName": "Forum Mysore",
@@ -1944,7 +1944,7 @@
     },
     {
       "visitId": 195,
-      "visitDate": "2026-06-17",
+      "visitDate": "2026-06-16",
       "visitType": "Informed Visit",
       "siteCode": "THR0",
       "siteName": "D Centre Vijaywada",
@@ -1954,7 +1954,7 @@
     },
     {
       "visitId": 196,
-      "visitDate": "2026-06-18",
+      "visitDate": "2026-06-17",
       "visitType": "Informed Visit",
       "siteCode": "THM0",
       "siteName": "Ardee Mall, Gurgaon",
@@ -1964,7 +1964,7 @@
     },
     {
       "visitId": 197,
-      "visitDate": "2026-06-19",
+      "visitDate": "2026-06-18",
       "visitType": "Informed Visit",
       "siteCode": "THS5",
       "siteName": "Brigade Orion",
@@ -1974,7 +1974,7 @@
     },
     {
       "visitId": 198,
-      "visitDate": "2026-06-20",
+      "visitDate": "2026-06-19",
       "visitType": "Surprise Visit",
       "siteCode": "THM2",
       "siteName": "Z Square Kanpur",
@@ -1984,7 +1984,7 @@
     },
     {
       "visitId": 199,
-      "visitDate": "2026-06-21",
+      "visitDate": "2026-06-20",
       "visitType": "Surprise Visit",
       "siteCode": "THS8",
       "siteName": "Gaur Central",
@@ -1994,7 +1994,7 @@
     },
     {
       "visitId": 200,
-      "visitDate": "2026-06-22",
+      "visitDate": "2026-06-21",
       "visitType": "Surprise Visit",
       "siteCode": "TJU3",
       "siteName": "GSM Mall Hyd",
@@ -2004,7 +2004,7 @@
     },
     {
       "visitId": 201,
-      "visitDate": "2026-06-23",
+      "visitDate": "2026-06-22",
       "visitType": "Surprise Visit",
       "siteCode": "TJU4",
       "siteName": "DSL Mall Hyd",
@@ -2014,7 +2014,7 @@
     },
     {
       "visitId": 202,
-      "visitDate": "2026-06-24",
+      "visitDate": "2026-06-23",
       "visitType": "Informed Visit",
       "siteCode": "TJY4",
       "siteName": "Airia mall",
@@ -2024,7 +2024,7 @@
     },
     {
       "visitId": 203,
-      "visitDate": "2026-06-25",
+      "visitDate": "2026-06-24",
       "visitType": "Informed Visit",
       "siteCode": "TJU6",
       "siteName": "Palassio Lucknow",
@@ -2034,7 +2034,7 @@
     },
     {
       "visitId": 204,
-      "visitDate": "2026-06-26",
+      "visitDate": "2026-06-25",
       "visitType": "Informed Visit",
       "siteCode": "TLX5",
       "siteName": "Vegas dwarka",
@@ -2044,7 +2044,7 @@
     },
     {
       "visitId": 205,
-      "visitDate": "2026-06-27",
+      "visitDate": "2026-06-26",
       "visitType": "Surprise Visit",
       "siteCode": "TPV5",
       "siteName": "Bangalore Departure",
@@ -2054,7 +2054,7 @@
     },
     {
       "visitId": 206,
-      "visitDate": "2026-06-28",
+      "visitDate": "2026-06-27",
       "visitType": "Surprise Visit",
       "siteCode": "TXPH",
       "siteName": "Ambala",
@@ -2064,7 +2064,7 @@
     },
     {
       "visitId": 207,
-      "visitDate": "2026-06-29",
+      "visitDate": "2026-06-28",
       "visitType": "Surprise Visit",
       "siteCode": "TWR1",
       "siteName": "Vizag",
@@ -2074,7 +2074,7 @@
     },
     {
       "visitId": 208,
-      "visitDate": "2026-06-30",
+      "visitDate": "2026-06-29",
       "visitType": "Surprise Visit",
       "siteCode": "TXGB",
       "siteName": "HSR",
@@ -2084,7 +2084,7 @@
     },
     {
       "visitId": 209,
-      "visitDate": "2026-04-01",
+      "visitDate": "2026-03-31",
       "visitType": "Informed Visit",
       "siteCode": "TXYT",
       "siteName": "Good Earth",
@@ -2094,7 +2094,7 @@
     },
     {
       "visitId": 210,
-      "visitDate": "2026-04-02",
+      "visitDate": "2026-04-01",
       "visitType": "Informed Visit",
       "siteCode": "TXSG",
       "siteName": "Indiranagar",
@@ -2104,7 +2104,7 @@
     },
     {
       "visitId": 211,
-      "visitDate": "2026-04-03",
+      "visitDate": "2026-04-02",
       "visitType": "Informed Visit",
       "siteCode": "TZ8A",
       "siteName": "Dehradun",
@@ -2114,7 +2114,7 @@
     },
     {
       "visitId": 212,
-      "visitDate": "2026-04-04",
+      "visitDate": "2026-04-03",
       "visitType": "Surprise Visit",
       "siteCode": "TZ8Z",
       "siteName": "Vega City",
@@ -2124,7 +2124,7 @@
     },
     {
       "visitId": 213,
-      "visitDate": "2026-06-19",
+      "visitDate": "2026-06-18",
       "visitType": "Surprise Visit",
       "siteCode": "TASG",
       "siteName": "Delhi Airport T1A",
@@ -2134,7 +2134,7 @@
     },
     {
       "visitId": 214,
-      "visitDate": "2026-04-06",
+      "visitDate": "2026-04-05",
       "visitType": "Surprise Visit",
       "siteCode": "TXR2",
       "siteName": "Zirakpur",
@@ -2144,7 +2144,7 @@
     },
     {
       "visitId": 215,
-      "visitDate": "2026-04-07",
+      "visitDate": "2026-04-06",
       "visitType": "Surprise Visit",
       "siteCode": "T38E",
       "siteName": "Lulu Lko",
@@ -2154,7 +2154,7 @@
     },
     {
       "visitId": 216,
-      "visitDate": "2026-06-25",
+      "visitDate": "2026-06-24",
       "visitType": "Informed Visit",
       "siteCode": "T36H",
       "siteName": "Falcon City Bangalore",
@@ -2164,7 +2164,7 @@
     },
     {
       "visitId": 217,
-      "visitDate": "2026-04-09",
+      "visitDate": "2026-04-08",
       "visitType": "Informed Visit",
       "siteCode": "TAHY",
       "siteName": "WMG Play",
@@ -2174,7 +2174,7 @@
     },
     {
       "visitId": 218,
-      "visitDate": "2026-04-10",
+      "visitDate": "2026-04-09",
       "visitType": "Informed Visit",
       "siteCode": "T36O",
       "siteName": "Bangalore Airport T2",
@@ -2184,7 +2184,7 @@
     },
     {
       "visitId": 219,
-      "visitDate": "2026-04-11",
+      "visitDate": "2026-04-10",
       "visitType": "Surprise Visit",
       "siteCode": "T2DE",
       "siteName": "Lucknow Airport Departure",
@@ -2194,7 +2194,7 @@
     },
     {
       "visitId": 220,
-      "visitDate": "2026-04-12",
+      "visitDate": "2026-04-11",
       "visitType": "Surprise Visit",
       "siteCode": "T2DK",
       "siteName": "Lucknow Airport Arrival",
@@ -2204,7 +2204,7 @@
     },
     {
       "visitId": 221,
-      "visitDate": "2026-04-13",
+      "visitDate": "2026-04-12",
       "visitType": "Surprise Visit",
       "siteCode": "T2MI",
       "siteName": "MALL OF ASIA",
@@ -2214,7 +2214,7 @@
     },
     {
       "visitId": 222,
-      "visitDate": "2026-04-14",
+      "visitDate": "2026-04-13",
       "visitType": "Surprise Visit",
       "siteCode": "T0ZV",
       "siteName": "Delhi T1D",
@@ -2224,7 +2224,7 @@
     },
     {
       "visitId": 223,
-      "visitDate": "2026-04-15",
+      "visitDate": "2026-04-14",
       "visitType": "Informed Visit",
       "siteCode": "TF5T",
       "siteName": "Hamleys Pacific D21",
@@ -2234,7 +2234,7 @@
     },
     {
       "visitId": 224,
-      "visitDate": "2026-04-16",
+      "visitDate": "2026-04-15",
       "visitType": "Informed Visit",
       "siteCode": "TL6O",
       "siteName": "Hamleys IRIS(TASD)",
@@ -2244,7 +2244,7 @@
     },
     {
       "visitId": 225,
-      "visitDate": "2026-04-17",
+      "visitDate": "2026-04-16",
       "visitType": "Informed Visit",
       "siteCode": "TK0G",
       "siteName": "Rowan garuda( T9MV",
@@ -2254,7 +2254,7 @@
     },
     {
       "visitId": 226,
-      "visitDate": "2026-04-18",
+      "visitDate": "2026-04-17",
       "visitType": "Surprise Visit",
       "siteCode": "TB6V",
       "siteName": "Unity Elegante",
@@ -2264,7 +2264,7 @@
     },
     {
       "visitId": 227,
-      "visitDate": "2026-04-19",
+      "visitDate": "2026-04-18",
       "visitType": "Surprise Visit",
       "siteCode": "TL9A",
       "siteName": "Lullu Bangalore",
@@ -2274,7 +2274,7 @@
     },
     {
       "visitId": 228,
-      "visitDate": "2026-04-20",
+      "visitDate": "2026-04-19",
       "visitType": "Surprise Visit",
       "siteCode": "TBAV",
       "siteName": "LAKESHORE",
@@ -2284,7 +2284,7 @@
     },
     {
       "visitId": 229,
-      "visitDate": "2026-04-21",
+      "visitDate": "2026-04-20",
       "visitType": "Surprise Visit",
       "siteCode": "TM1H",
       "siteName": "Pacific Faridabad",
