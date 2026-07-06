@@ -93,6 +93,17 @@ window.DASH = window.DASH || {};
     registry[id] = new Chart(canvas.getContext("2d"), config);
   }
 
+  // Grows a chart's canvas wrapper to fit however many bars it needs to draw
+  // so labels and % tags never get cramped or overlapping, no matter how
+  // many ROMs/SDs exist in the mapping (currently 6 ROMs / 14 SDs, but this
+  // keeps working automatically if the mapping grows further).
+  function fitCanvasHeight(id, rowCount, pxPerRow, floorPx) {
+    const canvas = document.getElementById(id);
+    const wrap = canvas ? canvas.closest(".chart-canvas-wrap") : null;
+    if (!wrap) return;
+    wrap.style.height = Math.max(floorPx || 280, rowCount * (pxPerRow || 28) + 50) + "px";
+  }
+
   function groupBy(arr, keyFn) {
     const map = new Map();
     arr.forEach(item => {
@@ -170,10 +181,15 @@ window.DASH = window.DASH || {};
   }
 
   /* ---------------------------------------------------------------------
-   * 3. SD-wise Visit Completion (bar %)
+   * 3. SD-wise Visit Completion (horizontal bar %)
+   *    Rendered as horizontal bars (like the Top/Low Stores charts) because
+   *    the SD list can run to well over a dozen names - horizontal bars
+   *    keep every SD name and % value fully legible without any overlap,
+   *    and the canvas grows automatically to fit however many SDs exist.
    * ------------------------------------------------------------------- */
   function renderSdCompletion(records) {
-    const rows = DASH.computeSdPerformance(records);
+    const rows = DASH.computeSdPerformance(records).sort((a, b) => b.completionPct - a.completionPct);
+    fitCanvasHeight("chart-sd-completion", rows.length, 28, 280);
     makeChart("chart-sd-completion", {
       type: "bar",
       data: {
@@ -183,16 +199,18 @@ window.DASH = window.DASH || {};
           data: rows.map(r => r.completionPct),
           backgroundColor: PALETTE.success,
           borderRadius: 6,
-          maxBarThickness: 30
+          maxBarThickness: 22
         }]
       },
       options: baseOptions({
+        indexAxis: "y",
+        layout: { padding: { top: 8, right: 40 } },
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: (ctx) => ctx.raw + "% complete" } },
-          datalabels: percentLabelsVertical(PALETTE.success)
+          datalabels: percentLabelsHorizontal(PALETTE.success)
         },
-        scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
+        scales: { x: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
   }
@@ -226,10 +244,13 @@ window.DASH = window.DASH || {};
   }
 
   /* ---------------------------------------------------------------------
-   * 5. Average Visit Score by SD
+   * 5. Average Visit Score by SD (horizontal bar %)
+   *    Same horizontal-bar treatment as SD-wise Visit Completion above, for
+   *    the same reason: keeps every SD name and % score fully legible.
    * ------------------------------------------------------------------- */
   function renderSdAvgScore(records) {
-    const rows = DASH.computeSdPerformance(records);
+    const rows = DASH.computeSdPerformance(records).sort((a, b) => b.avgScore - a.avgScore);
+    fitCanvasHeight("chart-sd-avg-score", rows.length, 28, 280);
     makeChart("chart-sd-avg-score", {
       type: "bar",
       data: {
@@ -239,16 +260,18 @@ window.DASH = window.DASH || {};
           data: rows.map(r => r.avgScore),
           backgroundColor: "#7c3aed",
           borderRadius: 6,
-          maxBarThickness: 30
+          maxBarThickness: 22
         }]
       },
       options: baseOptions({
+        indexAxis: "y",
+        layout: { padding: { top: 8, right: 40 } },
         plugins: {
           legend: { display: false },
           tooltip: { callbacks: { label: (ctx) => ctx.raw + "% avg score" } },
-          datalabels: percentLabelsVertical("#7c3aed")
+          datalabels: percentLabelsHorizontal("#7c3aed")
         },
-        scales: { y: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
+        scales: { x: { beginAtZero: true, max: 100, ticks: { callback: v => v + "%" } } }
       })
     });
   }

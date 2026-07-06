@@ -176,9 +176,19 @@ function getAllRoms() {
   return Array.from(new Set(storeMapping.map(function (s) { return s.rom; }))).sort();
 }
 
-/** Sorted, de-duplicated list of every SD name in the mapping. */
+/**
+ * Sorted, de-duplicated list of every genuine SD (Store Development) name in
+ * the mapping. A handful of stores have their ROM's own name entered in the
+ * "SD" column (the ROM is personally covering that store with no dedicated
+ * SD assigned yet) - those are ROM names, not SD names, so they are
+ * excluded here to keep SD-wise reporting (filters, table, KPI, charts)
+ * limited to actual Store Development leads only.
+ */
 function getAllSds() {
-  return Array.from(new Set(storeMapping.map(function (s) { return s.sd; }))).sort();
+  const romNames = new Set(storeMapping.map(function (s) { return s.rom; }));
+  return Array.from(new Set(storeMapping.map(function (s) { return s.sd; })))
+    .filter(function (sd) { return !romNames.has(sd); })
+    .sort();
 }
 
 /** Count of stores assigned to a given ROM. */
